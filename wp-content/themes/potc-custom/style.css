@@ -8,4 +8,216 @@ Author URI: https://github.com/Ashley-King
 Theme URI: https://pediatricOTcourses.com
 License: all rights reserved
 */
+@import url(css/normalize.css);
+@import url(css/skeleton.css);
+/**
+*GLOBAL STYLES AND VARIABLES
+**/
+/* VARIABLES  */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  word-break: break-word;
+  word-wrap: break-word;
+}
 
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+a {
+  color: #ff8247;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+a:hover {
+  color: #97D8D1;
+}
+
+.white-space {
+  white-space: nowrap;
+}
+
+.site-header {
+  height: 80px;
+  margin-top: 80px;
+  position: fixed;
+  width: 100%;
+}
+
+.site-header .nav__wrapper--mobile {
+  display: none;
+}
+
+.site-header .nav__wrapper--main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.site-header .nav__wrapper--main .nav__logo img {
+  max-width: 150px;
+}
+
+.site-header .nav__wrapper--main .main-menu-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header .nav__wrapper--main .main-menu-container .main-menu-items {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header .nav__wrapper--main .main-menu-container .main-menu-items .menu-item {
+  margin: 0 30px 0 0;
+}
+
+.site-header .nav__wrapper--main .main-menu-container .main-menu-items .menu-item a {
+  color: #5f5f5f;
+  text-decoration: none;
+}
+
+.site-header .nav__wrapper--main .main-menu-container .main-menu-items .menu-item a:hover {
+  color: #97D8D1;
+  text-decoration: none;
+}
+
+.site-header .nav__wrapper--main .main-menu-container .main-menu-items .menu-item:last-child {
+  margin-right: 0;
+}
+
+.site-header .nav__wrapper--main .nav__mobile {
+  display: none;
+}
+
+.site-header .nav__wrapper--main.nav--transparent {
+  background-color: transparent;
+}
+
+.site-header .nav__wrapper--main.nav--transparent .main-menu-container .main-menu-items .menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header .nav__wrapper--main.nav--transparent .main-menu-container .main-menu-items .menu-item a:hover {
+  color: #97D8D1;
+}
+
+.home .home__hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 118, 160, 0.7)), to(rgba(39, 118, 160, 0.7))), url("/wp-content/themes/potc-custom/images/therapy.jpg");
+  background: linear-gradient(rgba(39, 118, 160, 0.7), rgba(39, 118, 160, 0.7)), url("/wp-content/themes/potc-custom/images/therapy.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -80px;
+  padding: 230px 0 150px 0;
+}
+
+.home .home__hero h1 {
+  font-weight: 700;
+  font-size: 6.5rem;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+  max-width: 80%;
+  margin: 0 auto 30px auto;
+}
+
+.home .home__hero h1 span {
+  text-transform: uppercase;
+}
+
+.home .home__hero p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.25;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.home .home__hero .home__hero__cta {
+  width: 25%;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
+.home .home__hero .home__hero__cta a {
+  border-style: solid;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-color: #ff8247;
+  background-color: #ff8247;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding-top: 12px;
+  padding-right: 30px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.home .home__hero .home__hero__cta a:hover {
+  background-color: #97D8D1;
+  border-color: #97D8D1;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiLCJzdHlsZS5jc3MiLCJzYXNzL2dsb2JhbHMuc2NzcyIsInNhc3MvaGVhZGVyLnNjc3MiLCJzYXNzL2hvbWUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7O0NDU0M7QURFRCw4QkFBTztBQUNQLDZCQUFPO0FFWlA7O0VEY0U7QUNWRixlQUFBO0FBbUJBOzs7RUFHQywyQkFBbUI7VUFBbkIsbUJBQW1CO0VBQ25CLG1DQUFtQztFQUNuQyxzQkFBc0I7RUFDdEIscUJBQXFCO0FETnRCOztBQ1NBO0VBQ0ksWUFBWTtFQUNaLFdBQVc7RUFDWCxTQUFTO0VBQ1QsVUFBVTtBRE5kOztBQ1FBO0VBQ0ksa0NBQWtDO0VBQ2xDLFNBQVM7RUFDVCxVQUFVO0VBQ1YsWUFBWTtFQUNaLFdBQVc7QURMZjs7QUNRQTtFQUNJLGlCQUFpQjtBRExyQjs7QUNRQTtFQUNJLGNBdENXO0VBdUNYLG1DQWxDNkI7RUFrQzdCLDJCQWxDNkI7QUQ2QmpDOztBQ0dBO0VBSVEsY0EvQ2M7QUQ0Q3RCOztBQ1NBO0VBQ0ksbUJBQW1CO0FETnZCOztBRXZEQTtFQUNJLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLFdBQVc7QUYwRGY7O0FFOURBO0VBTVEsYUFBYTtBRjREckI7O0FFbEVBO0VBV1Esb0JBQWE7RUFBYixvQkFBYTtFQUFiLGFBQWE7RUFDYix5QkFBOEI7TUFBOUIsc0JBQThCO1VBQTlCLDhCQUE4QjtFQUM5Qix5QkFBbUI7TUFBbkIsc0JBQW1CO1VBQW5CLG1CQUFtQjtFQUNuQixlQUFlO0FGMkR2Qjs7QUV6RUE7RUFtQmdCLGdCQUFnQjtBRjBEaEM7O0FFN0VBO0VBdUJZLG1CQUFPO01BQVAsV0FBTztVQUFQLE9BQU87RUFDUCxvQkFBYTtFQUFiLG9CQUFhO0VBQWIsYUFBYTtFQUNiLHFCQUF5QjtNQUF6QixrQkFBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHlCQUFtQjtNQUFuQixzQkFBbUI7VUFBbkIsbUJBQW1CO0FGMEQvQjs7QUVwRkE7RUE0QmdCLFVBQVU7RUFDVixTQUFTO0VBQ1QsVUFBVTtFQUNWLGdCQUFnQjtFQUNoQixvQkFBYTtFQUFiLG9CQUFhO0VBQWIsYUFBYTtFQUNiLHFCQUF5QjtNQUF6QixrQkFBeUI7VUFBekIseUJBQXlCO0VBQ3pCLHlCQUFtQjtNQUFuQixzQkFBbUI7VUFBbkIsbUJBQW1CO0FGNERuQzs7QUU5RkE7RUFvQ29CLGtCQUFrQjtBRjhEdEM7O0FFbEdBO0VBc0N3QixjRHZCSjtFQ3dCSSxxQkFBcUI7QUZnRTdDOztBRXZHQTtFQXlDNEIsY0RsQ047RUNtQ00scUJBQXFCO0FGa0VqRDs7QUU1R0E7RUFnRG9CLGVBQWU7QUZnRW5DOztBRWhIQTtFQXFEWSxhQUFhO0FGK0R6Qjs7QUVwSEE7RUEwRFEsNkJBQTZCO0FGOERyQzs7QUV4SEE7RUFnRXdCLFdBQVc7RUFDWCxxQkFBcUI7QUY0RDdDOztBRTdIQTtFQW1FNEIsY0Q1RE47QUQwSHRCOztBR2pJQTtFQUdRLGlMQUFtSDtFQUFuSCx1SUFBbUg7RUFDbkgsa0NBQWtDO0VBQ2xDLHNCQUFzQjtFQUN0Qiw0QkFBNEI7RUFDNUIsaUJBQWlCO0VBQ2pCLHdCQUF3QjtBSGtJaEM7O0FHMUlBO0VBV1ksZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsY0FBYztFQUNkLHdCQUF3QjtBSG1JcEM7O0FHckpBO0VBcUJnQix5QkFBeUI7QUhvSXpDOztBR3pKQTtFQTBCWSxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGNBQWM7RUFDZCxjQUFjO0FIbUkxQjs7QUduS0E7RUFvQ1ksVUFBVTtFQUNWLHdCQUF3QjtFQUN4QixrQkFBa0I7QUhtSTlCOztBR3pLQTtFQXdDZ0IsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixxQkFBcUI7RUFDckIsb0JBQW9CO0VBQ3BCLHNCQUFzQjtFQUN0QixxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLGNBQWM7RUFDZCxvQkFBb0I7RUFDcEIsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixjQUFjO0VBQ2QseUJBQXlCO0VBQ3pCLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsbUJBQW1CO0VBQ25CLG9CQUFvQjtFQUNwQixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLG1DQUFtQztFQUNuQywyQkFBMkI7QUhxSTNDOztBR2pNQTtFQThEb0IseUJGdkRFO0VFd0RGLHFCRnhERTtBRCtMdEIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

@@ -52,14 +52,7 @@ function potc_custom_setup() {
 endif; // potc_custom_setup
 add_action( 'after_setup_theme', 'potc_custom_setup' );
 
-//bootstrap navwalker
-/**
- * Register Custom Navigation Walker
- */
-function register_navwalker(){
-	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-}
-add_action( 'after_setup_theme', 'register_navwalker' );
+
 
 //register styles and scripts
 
@@ -73,7 +66,10 @@ function potc_custom_register_styles() {
 	
 
 	// Add  CSS.
-	wp_enqueue_style( 'custom-style', get_stylesheet_uri(), array(), $theme_version );
+    wp_enqueue_style( 'custom-style', get_stylesheet_uri(), array(), $theme_version );
+
+    //add fonts
+    wp_enqueue_style( 'google-font',  'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"', array(), $theme_version );
 }
 
 add_action( 'wp_enqueue_scripts', 'potc_custom_register_styles' );

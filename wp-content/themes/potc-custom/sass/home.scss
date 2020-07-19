@@ -1,0 +1,69 @@
+.home {
+
+    .home__hero {
+        background: linear-gradient($blue-overlay, $blue-overlay), url('/wp-content/themes/potc-custom/images/therapy.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -80px;
+        padding: 230px 0 150px 0;
+
+        h1 {
+            font-weight: 700;
+            font-size: 6.5rem;
+            line-height: 1;
+            letter-spacing: 0;
+            text-align: center;
+            color: #fff;
+            max-width: 80%;
+            margin: 0 auto 30px auto;
+
+            span {
+                text-transform: uppercase;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.25;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .home__hero__cta {
+            width: 25%;
+            margin: 50px auto 0 auto;
+            text-align: center;
+            a {
+                border-style: solid;
+                border-top-width: 0;
+                border-right-width: 0;
+                border-left-width: 0;
+                border-bottom-width: 0;
+                border-color: #ff8247;
+                background-color: #ff8247;
+                color: #ffffff;
+                font-family: inherit;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 1;
+                text-transform: uppercase;
+                border-radius: 50px;
+                padding-top: 12px;
+                padding-right: 30px;
+                padding-bottom: 12px;
+                padding-left: 30px;
+                text-decoration: none;
+                -webkit-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+                &:hover{
+                    background-color: $medium-green;
+                    border-color: $medium-green;
+                }
+            }
+        }
+    }
+}
