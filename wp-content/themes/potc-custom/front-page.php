@@ -29,6 +29,7 @@ get_header();
 
     </div>
 </section>
+<?php get_template_part('/optins/side-image-optin') ?>
 <?php
 
 get_footer();

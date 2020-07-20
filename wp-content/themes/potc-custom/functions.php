@@ -84,7 +84,9 @@ function potc_custom_register_scripts() {
 	
 
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array(), $theme_version, false );
-	wp_script_add_data( 'custom-js', 'async', true );
+    
+    wp_enqueue_script( 'sf-submit-js', get_template_directory_uri() . '/js/sf-submit.js', array(), $theme_version, false );
+	
 
 }
 

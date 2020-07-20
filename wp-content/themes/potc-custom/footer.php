@@ -10,9 +10,11 @@
  */
 
 ?>
-			<footer id="site-footer" role="contentinfo" >
+			<footer id="site-footer" class="site-footer" >
 
-				<h1>footer</h1>
+				<div class="footer__info">
+                <span class="green-text">&copy; <?php echo date('Y') ?> | </span>&nbsp;<a href="/">pediatricOTcourses.com</a> &nbsp;<span class="green-text"> | </span>&nbsp; <span class="green-text">unique continuing education</span> &nbsp;<span class="green-text"> | </span>&nbsp; <a href="/disclosure">Disclosure</a> &nbsp;<span class="green-text"> | </span>&nbsp; <a href="/privacy-policy">Privacy Policy</a> &nbsp;<span class="green-text"> | </span>&nbsp; <a href="/tbl">TBL Newsletter</a>
+                </div>
 			</footer><!-- #site-footer -->
 
 		<?php wp_footer(); ?>
