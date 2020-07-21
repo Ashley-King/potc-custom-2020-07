@@ -65,16 +65,17 @@
  
 <?php wp_nav_menu( $defaults ); ?>
         
-<div class="nav__wrapper--mobile">
+<div class="nav__wrapper--mobile-button show">
      <span class="nav__mobile--top"></span>
      <span class="nav__mobile--middle"></span>
      <span class="nav__mobile--bottom"></span>
  </div>	
 
             </div>
+            
         
-            <div class="nav__wrapper--mobile">
-            <div class="nav__logo">
+            <div class="nav__wrapper--mobile ">
+            <!-- <div class="nav__logo">
                 
                 <?php if ($nav_class == "nav--transparent"):?>
                     <img src="/wp-content/themes/potc-custom/images/potc-logo-white.png" alt="potc logo">
@@ -82,7 +83,7 @@
                 <img src="/wp-content/themes/potc-custom/images/logo-green.png" alt="potc logo">
                 <?php endif ?>
             
-        </div>
+        </div> -->
         <?php $defaults = array(
     'theme_location'  => 'primary',
     'menu'            => 'primary-menu',

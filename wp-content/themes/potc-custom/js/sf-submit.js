@@ -1,13 +1,5 @@
 jQuery(document).ready(function($){
     //submit button click event
-  
-    // function isValidRecaptcha(){
-    //     $recap = $('#sideImage input[name="recaptcha_response"]').val();
-    //     if($recap.length && !$recap !== '' && $recap !== undefined){
-    //         return true;
-    //     }
-    //     return false;
-    // }
     function isValidEmail(){
         $email = $('#sideImage input[name="email"]').val();
         if($email.length && $email.indexOf('@') > -1){

@@ -4,7 +4,7 @@
     $list = get_field('side_image_list');
 ?>
 <section class="in-post__section">
-    <div class="in-post__section__wrapper">
+    <div class="in-post__section__wrapper container">
         <div class="in-post__image" >
             <div class="image__wrapper">
             <img src="<?php echo $image['url'] ?>" alt="side-image mockup">
@@ -16,8 +16,8 @@
                 <?php echo $text ?>
             </div>
         <form method="post"  id="sideImage">
-<p><input type="text" placeholder="First Name" name="first_name" required /></p>
-<p><input type="email" placeholder="Email" name="email" required /></p>
+<input type="text" placeholder="First Name" name="first_name" required />
+<input type="email" placeholder="Email" name="email" required />
 <!-- no botz please -->
 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="list" tabindex="-1" value="<?php echo $list ?>" autocomplete="off" /></div>
