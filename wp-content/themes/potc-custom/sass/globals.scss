@@ -43,6 +43,7 @@ body{
     padding: 0;
     height: 100%;
     width: 100%;
+    position: relative;
     
 }
 .container{
@@ -82,4 +83,16 @@ a{
 }
 .uppercase{
     text-transform: uppercase;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show-flex{
+    display: flex !important;
+}
+
+.show{
+    display: block !important;
 }

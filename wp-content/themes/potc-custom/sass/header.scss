@@ -6,13 +6,13 @@
     width: 100%;
     z-index: 20;
     background-color: transparent;
-    .nav__wrapper--mobile-button{
-        display: none;
+    // .nav__wrapper--mobile-button{
+    //     display: none;
         
-    }
+    // }
     
-.nav__wrapper--mobile-button.show{
-    display: flex;
+.nav__wrapper--mobile-button{
+    display: none;
     flex-direction: column;
     background-color: transparent;
     width: 40px;
@@ -72,8 +72,11 @@
                 }
             }
         }
-        .nav__mobile{
-            display: none;
+        //mobile slide in background
+        .nav__mobile__background{}
+        //mobile menu
+        .nav__wrapper--mobile{
+
         }
         
     }

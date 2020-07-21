@@ -12,7 +12,13 @@ jQuery(document).ready(function($){
            $(".site-header").removeClass("header-scroll");
         }
     });
-
+    if($(window).width() < 992){
+        $('.nav__wrapper--mobile-button').addClass('show-flex');
+        $('.nav__wrapper--main .main-menu-container').addClass('hide');
+    }else{
+        $('.nav__wrapper--mobile-button').removeClass('show-flex');
+        $('.nav__wrapper--main .main-menu-container').removeClass('hide');
+    }
 
 })
 

@@ -65,7 +65,7 @@
  
 <?php wp_nav_menu( $defaults ); ?>
         
-<div class="nav__wrapper--mobile-button show">
+<div class="nav__wrapper--mobile-button">
      <span class="nav__mobile--top"></span>
      <span class="nav__mobile--middle"></span>
      <span class="nav__mobile--bottom"></span>
@@ -73,7 +73,7 @@
 
             </div>
             
-        
+        <div class="nav__mobile__background"></div>
             <div class="nav__wrapper--mobile ">
             <!-- <div class="nav__logo">
                 
