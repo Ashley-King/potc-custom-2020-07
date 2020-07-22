@@ -35,8 +35,32 @@
 		<?php
 		wp_body_open();
 		?>
-
+        
 		<header id="site-header" class="site-header" >
+        <div class="nav__mobile__background">
+        <div class="nav__wrapper--mobile container">
+           
+           <?php $defaults = array(
+       'theme_location'  => 'primary',
+       'menu'            => 'primary-menu',
+       'container'       => 'nav',
+       'container_class' => 'main-menu-container--mobile',
+       'container_id'    => '',
+       'menu_class'      => '',
+       'menu_id'         => '',
+       'echo'            => true,
+       'fallback_cb'     => 'wp_page_menu',
+       'items_wrap'      => '<ul id="main-menu-items" class=" main-menu-items">%3$s</ul>',
+       'depth'           => 0,
+   );
+   ?>
+    
+   <?php wp_nav_menu( $defaults ); ?>
+           
+   
+   
+               </div>
+        </div>
             <div class="nav__wrapper--main container <?php echo $nav_classes?>">
             <div class="nav__logo">
                 <a href="/">
@@ -73,37 +97,8 @@
 
             </div>
             
-        <div class="nav__mobile__background"></div>
-            <div class="nav__wrapper--mobile ">
-            <!-- <div class="nav__logo">
-                
-                <?php if ($nav_class == "nav--transparent"):?>
-                    <img src="/wp-content/themes/potc-custom/images/potc-logo-white.png" alt="potc logo">
-                <?php else: ?>
-                <img src="/wp-content/themes/potc-custom/images/logo-green.png" alt="potc logo">
-                <?php endif ?>
-            
-        </div> -->
-        <?php $defaults = array(
-    'theme_location'  => 'primary',
-    'menu'            => 'primary-menu',
-    'container'       => 'nav',
-    'container_class' => 'main-menu-container--mobile',
-    'container_id'    => '',
-    'menu_class'      => '',
-    'menu_id'         => '',
-    'echo'            => true,
-    'fallback_cb'     => 'wp_page_menu',
-    'items_wrap'      => '<ul id="main-menu-items" class=" main-menu-items">%3$s</ul>',
-    'depth'           => 0,
-);
-?>
- 
-<?php wp_nav_menu( $defaults ); ?>
         
-
-
-            </div>
+            
 		</header><!-- #site-header -->
 
 		<?php

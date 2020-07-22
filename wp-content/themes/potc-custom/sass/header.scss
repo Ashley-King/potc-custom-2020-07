@@ -1,27 +1,81 @@
 
+
+
 .site-header{
     height: 80px;
-    // margin-top: 80px;
+    
     position: fixed;
     width: 100%;
     z-index: 20;
     background-color: transparent;
-    // .nav__wrapper--mobile-button{
-    //     display: none;
+    .nav__mobile__background.show-nav-bg{
+        display: flex;
+    }
+    .nav__mobile__background{
         
-    // }
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: $dark-blue;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .nav__wrapper--mobile.show-mobile-nav{
+            display: block;
+        }
+        .nav__wrapper--mobile{
+            display: none;
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li{
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 20px;
+                        line-height: 26px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    
     
 .nav__wrapper--mobile-button{
     display: none;
     flex-direction: column;
     background-color: transparent;
-    width: 40px;
+    justify-content: space-between;
+    transition: $main-transition;
+    width: 26px;
     
     cursor: pointer;
     
     span{
-        border: 2px solid white;
+        border: 1px solid white;
         margin-bottom: 3px;
+        border-radius: 3px;
+        display: inline-block;
+    }
+}
+
+.nav__wrapper--mobile-button.nav-open{
+    .nav__mobile--top{
+        transform: rotate(45deg);
+    }
+    .nav__mobile--middle{
+        display: none;
+    }
+    .nav__mobile--bottom{
+        transform: rotate(-45deg) translate(4px, -3px);
     }
 }
     .nav__wrapper--main.container:after{
@@ -59,10 +113,13 @@
                     margin: 0 30px 0 0;
                     a{
                         color: $text-color;
+                        font-weight: 600;
                         text-decoration: none;
                         &:hover{
                             color: $medium-green;
+                            font-weight: 600;
                             text-decoration: none;
+                            border-bottom: 1px solid $medium-green;
                         }
                     }
                     
@@ -70,14 +127,18 @@
                 .menu-item:last-child{
                     margin-right: 0;
                 }
+                .menu-item.current-menu-item{
+                    a{
+                        
+                        color: $medium-green !important;
+                        font-weight: 600;
+                        border-bottom: 1px solid $medium-green;
+                    }
+                }
             }
         }
-        //mobile slide in background
-        .nav__mobile__background{}
-        //mobile menu
-        .nav__wrapper--mobile{
-
-        }
+     
+        
         
     }
     .nav__wrapper--main.nav--transparent{
