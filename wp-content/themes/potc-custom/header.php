@@ -76,7 +76,7 @@
     'theme_location'  => 'primary',
     'menu'            => 'primary-menu',
     'container'       => 'nav',
-    'container_class' => 'main-menu-container',
+    'container_class' => 'main-menu-container container',
     'container_id'    => '',
     'menu_class'      => '',
     'menu_id'         => '',

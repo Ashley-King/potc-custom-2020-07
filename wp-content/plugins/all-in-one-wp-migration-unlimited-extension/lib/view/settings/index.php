@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<div class="ai1wm-field">
 								<label for="ai1wmue-backups">
 									<?php _e( 'Keep the most recent', AI1WMUE_PLUGIN_NAME ); ?>
-									<input style="width: 3em;" type="number" min="0" name="ai1wmue_backups" id="ai1wmue-backups" value="<?php echo intval( $backups ); ?>" />
+									<input style="width: 4.5em;" type="number" min="0" name="ai1wmue_backups" id="ai1wmue-backups" value="<?php echo intval( $backups ); ?>" />
 								</label>
 								<?php _e( 'backups. <small>Default: <strong>0</strong> unlimited</small>', AI1WMUE_PLUGIN_NAME ); ?>
 							</div>
@@ -58,7 +58,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<div class="ai1wm-field">
 								<label for="ai1wmue-total">
 									<?php _e( 'Limit the total size of backups to', AI1WMUE_PLUGIN_NAME ); ?>
-									<input style="width: 4em;" type="number" min="0" name="ai1wmue_total" id="ai1wmue-total" value="<?php echo intval( $total ); ?>" />
+									<input style="width: 4.5em;" type="number" min="0" name="ai1wmue_total" id="ai1wmue-total" value="<?php echo intval( $total ); ?>" />
 								</label>
 								<select style="margin-top: -2px;" name="ai1wmue_total_unit" id="ai1wmue-total-unit">
 									<option value="MB" <?php echo strpos( $total, 'MB' ) !== false ? 'selected="selected"' : null; ?>><?php _e( 'MB', AI1WMUE_PLUGIN_NAME ); ?></option>
@@ -70,7 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<div class="ai1wm-field">
 								<label for="ai1wmue-days">
 									<?php _e( 'Remove backups older than ', AI1WMUE_PLUGIN_NAME ); ?>
-									<input style="width: 3em;" type="number" min="0" name="ai1wmue_days" id="ai1wmue-days" value="<?php echo intval( $days ); ?>" />
+									<input style="width: 4.5em;" type="number" min="0" name="ai1wmue_days" id="ai1wmue-days" value="<?php echo intval( $days ); ?>" />
 								</label>
 								<?php _e( 'days. <small>Default: <strong>0</strong> off</small>', AI1WMUE_PLUGIN_NAME ); ?>
 							</div>

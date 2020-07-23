@@ -7,6 +7,9 @@
         background-repeat: no-repeat;
         margin-top: -80px;
         padding: 230px 0 150px 0;
+        @media(min-width:1920px){
+            padding: 400px 0 200px 0;
+        }
 
         h1 {
             font-weight: 700;
@@ -21,6 +24,12 @@
             span {
                 text-transform: uppercase;
             }
+            @media(max-width: 736px){
+                font-size: 5rem;
+            }
+            @media(max-width: 420px){
+                font-size: 3.5rem;
+            }
         }
 
         p {
@@ -31,12 +40,18 @@
             line-height: 1.25;
             max-width: 80%;
             margin: 0 auto;
+            @media(max-width: 420px){
+                font-size: 18px;
+            }
         }
 
         .home__hero__cta {
             width: 25%;
             margin: 50px auto 0 auto;
             text-align: center;
+            @media(max-width: 736px){
+                width: 100%;
+            }
 
             a {
                 border-style: solid;
@@ -74,7 +89,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            @media(max-width: 768px){
+                flex-direction:column;
+            }
             .home__info__boxes__box {
                 display: flex;
                 flex-direction: column;
@@ -85,12 +102,34 @@
                 padding: 20px;
                 margin-bottom: 40px;
                 align-items: center;
-                /* border: 1px solid #cecece; */
+                
                 background-color: #fff;
                 border-radius: 10px;
-                -webkit-box-shadow: -1px 2px 5px -1px #cecece;
-                box-shadow: -1px 2px 5px -1px #cecece;
-
+                box-shadow: $box-shadow;
+                &:first-of-type{
+                    @media(max-width: 768px){
+                        margin-top: 20px
+                    }
+                }
+                &:last-of-type{
+                    @media(max-width: 768px){
+                        margin-bottom: 20px
+                    }
+                }
+                @media(max-width: 900px){
+                    width: 32%;
+                }
+                @media(max-width: 768px){
+                    width: 90%;
+                    height: 210px;
+                    margin: 0px auto 20px auto;
+                    border: 1px solid $shadow-grey;
+                }
+                @media(max-width: 420px){
+                    
+                    height: 310px;
+                    
+                }
                 .info-box__image {
                     height: 70px;
                     width: 50px;
