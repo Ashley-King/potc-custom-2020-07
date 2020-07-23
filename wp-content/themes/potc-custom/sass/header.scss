@@ -24,13 +24,14 @@
         background-color: $dark-blue;
         display: none;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         .nav__wrapper--mobile.show-mobile-nav{
             display: block;
         }
         .nav__wrapper--mobile{
             display: none;
+            margin-top: 100px;
             ul{
                 margin: 0;
                 padding: 0;
@@ -43,6 +44,9 @@
                         line-height: 26px;
                         font-weight: 600;
                     }
+                }
+                .current-menu-item{
+                    text-decoration: underline;
                 }
             }
         }
