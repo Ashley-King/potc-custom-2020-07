@@ -41,6 +41,7 @@ html, body {
     }
 body{
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -98,4 +99,16 @@ a{
 
 .show{
     display: block !important;
+}
+
+.main-content{
+    display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 66.66666667%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @media(min-width: 1680px){
+            max-width: 50%;
+        }
 }

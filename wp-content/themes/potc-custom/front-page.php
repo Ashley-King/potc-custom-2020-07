@@ -1,10 +1,10 @@
 <?php
 $info = get_field('home_info');
-
+$image = get_field('home_hero_bg_image');
 get_header();
 
 ?>
-<section class="home__hero">
+<section class="home__hero" style="background: linear-gradient(rgba(39, 118, 160, 0.7), rgba(39, 118, 160, 0.7)), url(<?php echo $image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
     
     <div class="home__hero__text container">
         <h1>It's time to focus on <span>your</span> potential for a change.</h1>

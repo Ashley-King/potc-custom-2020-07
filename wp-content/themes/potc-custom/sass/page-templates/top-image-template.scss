@@ -1,0 +1,39 @@
+.page-template-top-image-template{
+
+    .top-image__hero{
+    
+        margin-top: -80px;
+        padding: 230px 0 150px 0;
+        @media(min-width:1920px){
+            padding: 400px 0 200px 0;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 6.5rem;
+            line-height: 1;
+            letter-spacing: 0;
+            text-align: center;
+            color: #fff;
+            max-width: 80%;
+            margin: 0 auto 30px auto;
+    
+            span {
+                text-transform: uppercase;
+            }
+            @media(max-width: 736px){
+                font-size: 5rem;
+            }
+            @media(max-width: 420px){
+                font-size: 3.5rem;
+            }
+            
+        }
+    }
+    .top-image__content{
+       
+        
+    }
+}
+    
+    
+

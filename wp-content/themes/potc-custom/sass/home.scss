@@ -1,10 +1,8 @@
 .home {
 
     .home__hero {
-        background: linear-gradient($blue-overlay, $blue-overlay), url('/wp-content/themes/potc-custom/images/therapy.jpg');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        
+        
         margin-top: -80px;
         padding: 230px 0 150px 0;
         @media(min-width:1920px){
