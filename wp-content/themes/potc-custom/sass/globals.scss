@@ -63,6 +63,8 @@ a{
     }
 }
 
+
+
 //helpers
 
 .site-header.header-scroll{
@@ -111,4 +113,26 @@ a{
         @media(min-width: 1680px){
             max-width: 50%;
         }
+}
+
+.styled-list-asterisk{
+    list-style: none;
+    margin-left: 30px;
+    
+    li{
+        list-style-type: none ;
+        text-indent: -1em;
+        padding-left: 1em;
+        
+        list-style-position: outside;
+       &:before{
+        content:'\2733\00FE0E';
+        color: $dark-green;
+        font-weight: bold;
+        display: inline-block;
+        width: 16px;
+        
+        
+       }
+    }
 }
