@@ -1,0 +1,36 @@
+.page-template-no-image-template{
+
+    
+    .no-image__content{
+        margin-top: 120px;
+        padding-bottom: 40px;
+        h1 {
+            font-weight: 700;
+            font-size: 5rem;
+            line-height: 1;
+            letter-spacing: 0;
+            text-align: center;
+            color: $dark-blue;
+            max-width: 80%;
+            margin: 0 auto 30px auto;
+    
+            span:not(.white-space) {
+                text-transform: uppercase;
+            }
+           
+            @media(max-width: 420px){
+                font-size: 3.5rem;
+            }
+            
+        }
+       h3{
+           font-weight: 600;
+           color: $dark-blue;
+           text-transform: capitalize;
+       }
+        
+    }
+}
+    
+    
+

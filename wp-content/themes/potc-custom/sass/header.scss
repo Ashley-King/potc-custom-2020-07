@@ -64,7 +64,7 @@
     cursor: pointer;
     
     span{
-        border: 1px solid white;
+        border: 1px solid $text-color;
         margin-bottom: 3px;
         border-radius: 3px;
         display: inline-block;
@@ -72,6 +72,9 @@
 }
 
 .nav__wrapper--mobile-button.nav-open{
+    span{
+        border-color: #fff;
+    }
     .nav__mobile--top{
         transform: rotate(45deg);
     }
@@ -90,6 +93,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 20px 0;
+        border-bottom: 1px solid $grey-border;
         @media(max-width: 399px){
             padding: 20px;
         }
@@ -148,8 +152,40 @@
         
         
     }
+    &.header-scroll{
+        
+        .nav__wrapper--main{
+            background-color: transparent;
+            border-bottom: none;
+            .nav__wrapper--mobile-button{
+                span{
+                    border-color: #fff;
+                }
+            }
+            .main-menu-container{
+                
+                .main-menu-items{
+                    .menu-item{
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                            &:hover{
+                                color: $medium-green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .nav__wrapper--main.nav--transparent{
         background-color: transparent;
+        border-bottom: none;
+        .nav__wrapper--mobile-button{
+            span{
+                border-color: #fff;
+            }
+        }
         .main-menu-container{
             
             .main-menu-items{

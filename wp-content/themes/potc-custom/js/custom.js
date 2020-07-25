@@ -1,6 +1,7 @@
 jQuery(document).ready(function($){
    
-    
+    //current logo
+    $image = $('.nav__logo img').attr('src');
 
     //show/hide mobile button
     if($(window).width() < 992){
@@ -26,19 +27,32 @@ jQuery(document).ready(function($){
         $(this).toggleClass('nav-open');
         $('.nav__mobile__background').toggleClass('show-nav-bg');
         $('.nav__wrapper--mobile').toggleClass('show-mobile-nav')
+        if(!$('.nav__wrapper--main').hasClass('nav--transparent') && $('.nav__wrapper--mobile-button').hasClass('nav-open')){
+            $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/potc-logo-white.png') ;
+        }
+        if(!$('.nav__wrapper--main').hasClass('nav--transparent') && !$('.nav__wrapper--mobile-button').hasClass('nav-open')){
+            $('.nav__logo img').attr('src', $image) ;
+        }
+        
     })
+  
+    
+
 
     /**
      * control bg of header on scroll
      */
+    
     $('body').on("scroll", function() {
+        
         
         if($('body').scrollTop() > 20) {
             $(".site-header").addClass("header-scroll");
-            
+            $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/potc-logo-white.png') ; 
         } else {
             //remove the background property so it comes transparent again (defined in your css)
            $(".site-header").removeClass("header-scroll");
+           $('.nav__logo img').attr('src', $image) ;
         }
         
     });
