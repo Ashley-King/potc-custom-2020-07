@@ -65,9 +65,9 @@
             <div class="nav__logo">
                 <a href="/">
                 <?php if ($nav_class =="nav--transparent"):?>
-                    <img src="/wp-content/themes/potc-custom/images/potc-logo-white.png" alt="potc logo">
+                    <img src="/wp-content/themes/potc-custom/images/logo-white.svg" alt="potc logo">
                 <?php else: ?>
-                <img src="/wp-content/themes/potc-custom/images/logo-green.png" alt="potc logo">
+                <img src="/wp-content/themes/potc-custom/images/logo-blue.svg" alt="potc logo">
                 <?php endif ?>
             </a>
             

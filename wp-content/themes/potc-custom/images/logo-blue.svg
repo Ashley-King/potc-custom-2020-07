@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1231.71" height="348.361" viewBox="0 0 1231.71 348.361">
+  <g id="Group_2" data-name="Group 2" transform="translate(-2404.145 -813.039)">
+    <text id="pediatric" transform="translate(2404.145 990.039)" fill="#27769f" font-size="174.357" font-family="AvantGardeLT-Bold, ITC Avant Garde Gothic LT" font-weight="700" letter-spacing="-0.025em"><tspan x="0" y="0">pediatric</tspan></text>
+    <text id="courses" transform="translate(2539.757 1114.401)" fill="#27769f" font-size="174.357" font-family="AvantGardeLT-Bold, ITC Avant Garde Gothic LT" font-weight="700" letter-spacing="-0.035em"><tspan x="0" y="0">courses</tspan></text>
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_1" data-name="Path 1" d="M3508.177,1103.08h58.179v-176.7h69.5v-51.1H3404.221c22.111,9.957,36.65,26.838,46.581,51.1h57.375Z" fill="#27769f" fill-rule="evenodd"/>
+    </g>
+    <path id="Path_2" data-name="Path 2" d="M3323.335,872.586A123.613,123.613,0,1,0,3446.949,996.2,123.614,123.614,0,0,0,3323.335,872.586Zm0,195.208c-35.986,0-65.158-32.054-65.158-71.595s29.172-71.594,65.158-71.594,65.159,32.054,65.159,71.594S3359.321,1067.794,3323.335,1067.794Z" fill="#27769f" fill-rule="evenodd"/>
+  </g>
+</svg>
