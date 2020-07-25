@@ -87,7 +87,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            @media(max-width: 768px){
+            @media(max-width: 910px){
                 flex-direction:column;
             }
             .home__info__boxes__box {
@@ -96,7 +96,7 @@
                 width: 28%;
                 margin-top: -70px;
                 z-index: 10;
-                height: 310px;
+                height: 420px;
                 padding: 20px;
                 margin-bottom: 40px;
                 align-items: center;
@@ -105,32 +105,41 @@
                 border-radius: 10px;
                 box-shadow: $box-shadow;
                 &:first-of-type{
-                    @media(max-width: 768px){
-                        margin-top: 20px
+                    @media(max-width: 910px){
+                        margin-top: 40px
                     }
                 }
                 &:last-of-type{
-                    @media(max-width: 768px){
-                        margin-bottom: 20px
+                    @media(max-width: 910px){
+                        margin-bottom: 40px
                     }
                 }
-                @media(max-width: 900px){
+                @media(max-width: 1280px){
                     width: 32%;
+                    height: 480px;
                 }
-                @media(max-width: 768px){
+                @media(max-width: 991px){
+                    
+                    height: 500px;
+                }
+                // @media(max-width: 900px){
+                //     width: 32%;
+                // }
+                @media(max-width: 910px){
                     width: 90%;
-                    height: 210px;
+                     height: unset;
                     margin: 0px auto 20px auto;
                     border: 1px solid $shadow-grey;
                 }
-                @media(max-width: 420px){
+                // @media(max-width: 420px){
                     
-                    height: 310px;
+                //     height: 310px;
                     
-                }
+                // }
                 .info-box__image {
-                    height: 70px;
-                    width: 50px;
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 50%;
                     img {
                         width: 100%;
                         max-width: 100%;
@@ -142,11 +151,14 @@
                         font-size: 2rem;
                         color: $orange;
                         text-align:center;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
                     }
 
                     p {
                         color: $dark-green;
                         text-align:center;
+                        margin-top: 0;
                     }
                 }
             }

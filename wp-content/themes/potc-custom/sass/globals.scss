@@ -48,7 +48,7 @@ body{
     width: 100%;
     position: relative;
     overflow-x: hidden;
-    
+    color: $text-color;
 }
 .container{
     max-width: 1200px;
@@ -107,12 +107,12 @@ a{
     display: flex;
         flex-direction: column;
         margin: 0 auto;
-        max-width: 66.66666667%;
+        max-width: 680px;
         padding-top: 40px;
         padding-bottom: 40px;
-        @media(min-width: 1680px){
-            max-width: 50%;
-        }
+        // @media(min-width: 1680px){
+        //     max-width: 960px;
+        // }
 }
 
 .styled-list-asterisk{
@@ -127,7 +127,7 @@ a{
         list-style-position: outside;
        &:before{
         content:'\2733\00FE0E';
-        color: $dark-green;
+        color: $dark-blue;
         font-weight: bold;
         display: inline-block;
         width: 16px;

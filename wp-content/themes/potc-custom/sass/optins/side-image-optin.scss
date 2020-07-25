@@ -27,6 +27,9 @@
             @media(max-width: 768px){
                 margin-right:0;
             }
+            @media(max-width: 420px){
+                width: 90%;
+            }
             .image__wrapper{
                
                 
@@ -37,6 +40,7 @@
                     -webkit-box-shadow: -1px 2px 5px -1px rgba(94,94,94,1);
                     -moz-box-shadow: -1px 2px 5px -1px rgba(94,94,94,1);
                     box-shadow: -1px 2px 5px -1px rgba(94,94,94,1);
+                    
                 }
             }
             
@@ -103,7 +107,7 @@
 
 @media(max-width: 800px){
     .in-post__section{
-        padding: 40px 0;
+        padding: 20px 0;
     }
     .in-post__section .in-post__section__wrapper .in-post__form{
         width: 100%;
