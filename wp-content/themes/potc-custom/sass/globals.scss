@@ -163,6 +163,10 @@ a {
     display: block !important;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -196,6 +200,9 @@ a {
     }
 }
 
+/**
+* POST CATEGORIES
+*______________________________________*/
 .category-uncategorized {
     display: none;
 }
