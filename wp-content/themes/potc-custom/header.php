@@ -14,6 +14,9 @@
     if($nav_class){
         $nav_classes = $nav_class;
     }
+    if(is_home()){
+        $nav_classes = 'nav--transparent';
+    }
 ?>
 <!DOCTYPE html>
 
@@ -64,7 +67,7 @@
             <div class="nav__wrapper--main container <?php echo $nav_classes?>">
             <div class="nav__logo">
                 <a href="/">
-                <?php if ($nav_class =="nav--transparent"):?>
+                <?php if ($nav_classes =="nav--transparent"):?>
                     <img src="/wp-content/themes/potc-custom/images/logo-white.svg" alt="potc logo">
                 <?php else: ?>
                 <img src="/wp-content/themes/potc-custom/images/logo-blue.svg" alt="potc logo">

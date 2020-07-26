@@ -9,7 +9,7 @@ get_header();
     <div class="home__hero__text container">
         <h1>It's time to focus on <span>your</span> potential for a change.</h1>
         <p>Join our list and be the first to know about new courses and course discounts. Get the best ideas in pediatric therapy, business and life. Be the boss of your career <span class="white-space">(not the other way around)!</span></p>
-        <div class="home__hero__cta"><a href="#">Join Us</a></div>
+        <div class="home__hero__cta "><a href="#" class="pill-button">Join Us</a></div>
     </div>
     
 </section>

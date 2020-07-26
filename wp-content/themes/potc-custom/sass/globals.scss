@@ -12,6 +12,7 @@ $dark-blue:#27769f;
 $pink: #f53a63;
 $light-pink:#ffb0b6;
 $orange:#ff8247;
+$light-orange: #fbc181;
 $light-purple: #e2bfdf;
 $text-color: #5f5f5f;
 $orange-overlay: rgba(255, 130, 71, .3);
@@ -19,29 +20,32 @@ $white-overlay: rgba(255, 255, 255, .6);
 $main-transition: all 0.3s linear;
 $grey-border: rgba(0, 0, 0, 0.1);
 $light-grey: #efefef;
-$box-shadow:  -1px 2px 5px -1px #cecece;
+$box-shadow: -1px 2px 5px -1px #cecece;
 $shadow-grey: #cecece;
 
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
-	-webkit-font-smoothing: antialiased;
-	word-break: break-word;
-	word-wrap: break-word;
+    box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
-html, body { 
-    margin:0;
-    padding:0;
-    width:100%;
-    height:100%;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     overflow: auto;
-    }
-body{
+}
+
+body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    line-height: 24px;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -50,87 +54,179 @@ body{
     overflow-x: hidden;
     color: $text-color;
 }
-.container{
+
+.container {
     max-width: 1200px;
 }
 
-a{
+a {
     color: $orange;
     transition: $main-transition;
-    &:hover{
+
+    &:hover {
         color: $medium-green;
 
     }
 }
 
+.small-button {
+    background-color: $orange;
+    box-shadow: 3px 3px 0px $light-orange;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    // letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 10px 12px;
+    text-decoration: none;
+    white-space: normal;
+    width: auto;
 
+    &:hover {
+        background-color: $medium-green;
+        box-shadow: 3px 3px 0px $light-green;
+        color: #fff;
+    }
+}
+
+.pill-button {
+    border-style: solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-color: #ff8247;
+    background-color: #ff8247;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding-top: 12px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background-color: $medium-green;
+        border-color: $medium-green;
+        color: #fff;
+    }
+}
 
 //helpers
 
-.site-header.header-scroll{
+.site-header.header-scroll {
     background-color: #2776a0;
 }
 
-.white-space{
+.white-space {
     white-space: nowrap;
 }
 
 
-.green-text{
+.green-text {
     color: $dark-green;
 }
 
-.uppercase-bold{
+.uppercase-bold {
     text-transform: uppercase;
     font-weight: 700;
 }
-.italic{
-    font-style:italic;
+
+.italic {
+    font-style: italic;
 }
-.uppercase{
+
+.uppercase {
     text-transform: uppercase;
 }
 
-.hide{
+.hide {
     display: none !important;
 }
 
-.show-flex{
+.show-flex {
     display: flex !important;
 }
 
-.show{
+.show {
     display: block !important;
 }
 
-.main-content{
+.main-content {
     display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        max-width: 680px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 680px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
-.styled-list-asterisk{
+.styled-list-asterisk {
     list-style: none;
     margin-left: 30px;
-    
-    li{
-        list-style-type: none ;
+
+    li {
+        list-style-type: none;
         text-indent: -1em;
         padding-left: 1em;
-        
+
         list-style-position: outside;
-       &:before{
-        content:'\2733\00FE0E';
-        color: $dark-blue;
-        font-weight: bold;
-        display: inline-block;
-        width: 16px;
-        
-        
-       }
+
+        &:before {
+            content: '\2733\00FE0E';
+            color: $dark-blue;
+            font-weight: bold;
+            display: inline-block;
+            width: 16px;
+
+
+        }
+    }
+}
+
+.category-uncategorized {
+    display: none;
+}
+
+.category-business {
+    span {
+        background: #f53a63;
+    }
+}
+.category-child-development {
+    span {
+        background: $orange;
+    }
+}
+.category-paperwork {
+    span {
+        background: #f53a63;
+    }
+}
+.category-marketing {
+    span {
+        background: #f53a63;
+    }
+}
+.category-parenting {
+    span {
+        background: $dark-green;
+    }
+}
+.category-lifestyle-design {
+    span {
+        background: $dark-blue;
     }
 }
