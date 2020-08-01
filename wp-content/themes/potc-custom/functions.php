@@ -86,6 +86,7 @@ function potc_custom_register_scripts() {
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery'), $theme_version, false );
     
     wp_enqueue_script( 'sf-submit-js', get_template_directory_uri() . '/js/sf-submit.js', array('jquery'), $theme_version, false );
+    wp_enqueue_script( 'modal-js',  'https://unpkg.com/micromodal/dist/micromodal.min.js', array('jquery'), $theme_version, false );
 	
 
 }

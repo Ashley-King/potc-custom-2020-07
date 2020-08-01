@@ -28,13 +28,16 @@ jQuery(document).ready(function($){
         $('.nav__mobile__background').toggleClass('show-nav-bg');
         $('.nav__wrapper--mobile').toggleClass('show-mobile-nav')
         if(!$('.nav__wrapper--main').hasClass('nav--transparent') && $('.nav__wrapper--mobile-button').hasClass('nav-open')){
-            $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.svg') ;
+            $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.png') ;
+            $('.nav__wrapper--main').css('border-bottom', 'none');
         }
         if(!$('.nav__wrapper--main').hasClass('nav--transparent') && !$('.nav__wrapper--mobile-button').hasClass('nav-open')){
             $('.nav__logo img').attr('src', $image) ;
+            $('.nav__wrapper--main').css('border-bottom', '1px solid rgba(0, 0, 0, 0.1)');
         }
-        
-    })
+
+       
+    }); 
   
     
 
@@ -48,7 +51,7 @@ jQuery(document).ready(function($){
         
         if($('body').scrollTop() > 20) {
             $(".site-header").addClass("header-scroll");
-            $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.svg') ; 
+            $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.png') ; 
         } else {
             //remove the background property so it comes transparent again (defined in your css)
            $(".site-header").removeClass("header-scroll");
@@ -56,6 +59,21 @@ jQuery(document).ready(function($){
         }
         
     });
+    //functions for modals
+    function changeIndex(el){
+        $(el).addClass('change-index');
 
-})
+    }
+    function normalIndex(el){
+        $(el).removeClass('change-index');
+    }
+
+    $('#modal-home-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('modal-home', {
+            onShow: modal => changeIndex('.home__info__boxes__box'),
+            onClose: modal => normalIndex('.home__info__boxes__box')
+        });
+    })
+})//end doc ready
 

@@ -1,5 +1,6 @@
 .home {
 
+    
     .home__hero {
         
         
@@ -135,6 +136,9 @@
                         margin-top: 0;
                     }
                 }
+            }
+            .home__info__boxes__box.change-index{
+                z-index: unset;
             }
         }
     }
