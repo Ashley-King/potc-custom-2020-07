@@ -3,7 +3,11 @@
 get_header();
 
 ?>
-<section class="blog__hero" style="background: linear-gradient(rgba(39, 118, 160, 0.7), rgba(39, 118, 160, 0.7)), url('/wp-content/themes/potc-custom/images/girl-sidewalk-chalk.png'); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+<section class="blog__hero" style="background: linear-gradient(rgba(69, 159, 221, 0.8)
+
+, rgba(69, 159, 221, 0.8)
+
+), url('/wp-content/themes/potc-custom/images/girl-sidewalk-chalk.png'); background-position: center center; background-repeat: no-repeat; background-size: cover;">
     
     <div class="blog__hero__text container">
     <div class="blog__hero__text__wrapper">

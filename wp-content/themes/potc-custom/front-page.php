@@ -4,7 +4,11 @@ $image = get_field('home_hero_bg_image');
 get_header();
 
 ?>
-<section class="home__hero" style="background: linear-gradient(rgba(39, 118, 160, 0.7), rgba(39, 118, 160, 0.7)), url(<?php echo $image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+<section class="home__hero" style="background: linear-gradient(rgba(69, 159, 221, 0.8)
+
+, rgba(69, 159, 221, 0.8)
+
+), url(<?php echo $image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
     
     <div class="home__hero__text container">
         <h1>It's time to focus on <span>your</span> potential for a change.</h1>
@@ -35,21 +39,21 @@ get_header();
 <div class="modal micromodal-slide" id="modal-home" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-home-title">
+          
         <header class="modal__header">
-          <h2 class="modal__title" id="modal-1-title">
-            Micromodal
-          </h2>
-          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          <div class="modal__close" aria-label="Close modal" data-micromodal-close></div>
         </header>
         <main class="modal__content" id="modal-home-content">
-          <p>
-            Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
-          </p>
+            <div class="modal__content__header">
+            <h2>Be the boss of <span class="white-space">Your career</span></h2>
+          <h3>(not the other way around)</h3>
+          <p>Our emails have more awesome ideas than you shake a stick at.</p>
+          
+          
+            </div>
+          
         </main>
-        <footer class="modal__footer">
-          <button class="modal__btn modal__btn-primary">Continue</button>
-          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
-        </footer>
+        
       </div>
     </div>
   </div>
