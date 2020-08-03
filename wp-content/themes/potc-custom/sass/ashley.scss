@@ -1,12 +1,16 @@
 .ashley{
     .main-content{
-        p:first-child{
+        p:nth-child(2){
             text-align: center;;
             .ashley-image{
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
                 border: 2px dashed $orange;
+                transition: $main-transition;
+                &:hover{
+                    transform: rotate(20deg);
+                }
 
             }
         }

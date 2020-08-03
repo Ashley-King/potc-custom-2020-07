@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
     //submit button click event
-    function isValidEmail(){
-        $email = $('#sideImage input[name="email"]').val();
+    function isValidEmail($form){
+        $email = $($form).find('input[name="email"]').val();
         if($email.length && $email.indexOf('@') > -1){
             return true;
         }
@@ -9,41 +9,41 @@ jQuery(document).ready(function($){
 
     }
 
-    function isValidName(){
-        $name = $('#sideImage input[name="first_name"]').val();
+    function isValidName($form){
+        $name = $($form).find('input[name="first_name"]').val();
         if($name.length && $name !== ''){
             return true;
         }
         return false;
     }
 
-    function notBotz(){
-        $botz = $('#sideImage input[name="a_password"]').val();
+    function notBotz($form){
+        $botz = $($form).find('input[name="a_password"]').val();
         if(!$botz.length || $botz === '' || $botz== undefined || !$botz ){
             return true;
         }
-        $('#sideImage input[name="email"]').val('');
-        $('#sideImage input[name="first_name"]').val('');
-        $('#sideImage input[name="a_password"]').val('');
+        $($form).find('input[name="first_name"]').val('');
+        $($form).find('input[name="email"]').val('');
+        $($form).find('input[name="a_password"]').val('');
         return false;
     }
     
     $('.form-submit').click(function(e){
         e.preventDefault();
-        formData = $('#sideImage').serialize();
+        $form = $(this).parents('form').attr('id');
+        $form_id = '#' + $form;
+        formData = $($form_id).serialize();
         //  console.log(formData);
         // formData = JSON.stringify(formData);
         
-        if(!isValidEmail()){
+        if(!isValidEmail($form_id)){
             alert('add email');
-        }else if(!isValidName()){
+        }else if(!isValidName($form_id)){
             alert('add name')
-        }else if(!notBotz()){
+        }else if(!notBotz($form_id)){
             alert("no botz please")
         } 
-        // else if (!isValidRecaptcha()){
-        //     alert("no botz please")
-        // }
+        
         else{
             $('#sideImage input[name="email"]').val('');
             $('#sideImage input[name="first_name"]').val('');
