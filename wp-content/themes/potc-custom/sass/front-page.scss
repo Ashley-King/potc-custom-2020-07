@@ -20,7 +20,7 @@
             max-width: 80%;
             margin: 0 auto 30px auto;
 
-            span {
+            span:not(.white-space) {
                 text-transform: uppercase;
             }
             @media(max-width: 736px){
@@ -135,6 +135,10 @@
                         color: $dark-green;
                         text-align:center;
                         margin-top: 0;
+                        @media(max-width: 910px){
+                            max-width: 80%;
+                            margin: 0 auto;
+                        }
                     }
                 }
             }

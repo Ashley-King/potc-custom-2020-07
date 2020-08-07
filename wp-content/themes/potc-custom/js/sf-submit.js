@@ -18,13 +18,13 @@ jQuery(document).ready(function($){
     }
 
     function notBotz($form){
-        $botz = $($form).find('input[name="a_password"]').val();
+        $botz = $($form).find('input[name="license"]').val();
         if(!$botz.length || $botz === '' || $botz== undefined || !$botz ){
             return true;
         }
         $($form).find('input[name="first_name"]').val('');
         $($form).find('input[name="email"]').val('');
-        $($form).find('input[name="a_password"]').val('');
+        $($form).find('input[name="license"]').val('');
         return false;
     }
     
@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
         $form = $(this).parents('form').attr('id');
         $form_id = '#' + $form;
         formData = $($form_id).serialize();
-        //  console.log(formData);
+         console.log(formData);
         // formData = JSON.stringify(formData);
         
         if(!isValidEmail($form_id)){
@@ -45,9 +45,10 @@ jQuery(document).ready(function($){
         } 
         
         else{
-            $('#sideImage input[name="email"]').val('');
-            $('#sideImage input[name="first_name"]').val('');
-            $('#sideImage input[name="a_password"]').val('');
+            $($form_id).find('input[name="first_name"]').val('');
+            $($form_id).find('input[name="email"]').val('');
+            $($form_id).find('input[name="license"]').val('');
+            
             formSubmit()
         }
 
@@ -60,8 +61,8 @@ jQuery(document).ready(function($){
             data: formData,
             success: function (data) {
                 
-              window.location.href='https://pediatricotcourses.com/thank-you';
-            //   console.log(data)
+            //   window.location.href='https://pediatricotcourses.com/thank-you';
+              console.log(data)
             }
           });
     }

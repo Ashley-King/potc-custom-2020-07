@@ -75,5 +75,15 @@ jQuery(document).ready(function($){
             onClose: modal => normalIndex('.home__info__boxes__box')
         });
     })
+
+    $('#modal-blog-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('modal-blog');
+    })
+
+
+
+
+
 })//end doc ready
 
