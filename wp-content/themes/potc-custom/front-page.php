@@ -59,11 +59,12 @@ get_header();
 <input type="email" placeholder="Email" name="email" required/>
 <!-- no botz please -->
 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="license"
-" tabindex="-1" value="" autocomplete="false" /></div>
-<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="list" tabindex="-1" value="<?php echo $list ?>" autocomplete="false" /></div>
+" tabindex="-1" value="" autocomplete="offload" /></div>
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="list" tabindex="-1" value="<?php echo $list ?>" autocomplete="offload" /></div>
                   <button type="submit" class="form-submit" id="modal-home-submit">Sign Me Up!</button>
               </form>
           </div>
+          <!--MODAL-->
         </main>
        
       </div>

@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
         $form = $(this).parents('form').attr('id');
         $form_id = '#' + $form;
         formData = $($form_id).serialize();
-         console.log(formData);
+        //  console.log(formData);
         // formData = JSON.stringify(formData);
         
         if(!isValidEmail($form_id)){
@@ -60,9 +60,13 @@ jQuery(document).ready(function($){
             url: '/wp-content/themes/potc-custom/sf-submit.php',
             data: formData,
             success: function (data) {
+           location.href = 'https://pediatricotcourses.com/thank-you';
+            //   console.log(data)
+            },
+            error: function(err){
                 
-            //   window.location.href='https://pediatricotcourses.com/thank-you';
-              console.log(data)
+                console.log(err);
+                location.href = 'https://pediatricotcourses.com/thank-you';
             }
           });
     }

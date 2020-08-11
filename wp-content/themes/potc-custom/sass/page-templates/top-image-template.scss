@@ -1,7 +1,9 @@
 .page-template-top-image-template{
 
     .top-image__hero{
-    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-top: -80px;
         padding: 230px 0 150px 0;
         @media(min-width:1920px){
@@ -34,6 +36,10 @@
             @media(max-width: 420px){
                 font-size: 3.5rem;
             }
+           
+        }
+        .hero-button{
+            margin: 10px auto 0 auto;
             
         }
     }
@@ -43,6 +49,7 @@
            color: $dark-blue;
            text-transform: capitalize;
        }
+       
         
     }
 }

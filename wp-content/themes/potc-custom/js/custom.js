@@ -86,6 +86,11 @@ jQuery(document).ready(function($){
         MicroModal.show('modal-error');
     })
 
+    $('#modal-page-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('modal-page');
+    })
+
 
 
 
