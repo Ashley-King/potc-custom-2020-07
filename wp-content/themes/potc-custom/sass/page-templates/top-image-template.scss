@@ -48,6 +48,9 @@
            font-weight: 600;
            color: $dark-blue;
            text-transform: capitalize;
+           @media(max-width: 420px){
+            max-width: 300px;
+        }
        }
        
         
