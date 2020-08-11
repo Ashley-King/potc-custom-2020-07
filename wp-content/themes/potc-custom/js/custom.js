@@ -72,23 +72,30 @@ jQuery(document).ready(function($){
         e.preventDefault();
         MicroModal.show('modal-home', {
             onShow: modal => changeIndex('.home__info__boxes__box'),
-            onClose: modal => normalIndex('.home__info__boxes__box')
+            onClose: modal => normalIndex('.home__info__boxes__box'),
+            disableFocus: true,
         });
     })
 
     $('#modal-blog-open').click(function(e){
         e.preventDefault();
-        MicroModal.show('modal-blog');
+        MicroModal.show('modal-blog',{
+            disableFocus: true,
+        });
     })
 
     $('#modal-error-open').click(function(e){
         e.preventDefault();
-        MicroModal.show('modal-error');
+        MicroModal.show('modal-error',{
+            disableFocus: true,
+        });
     })
 
     $('#modal-page-open').click(function(e){
         e.preventDefault();
-        MicroModal.show('modal-page');
+        MicroModal.show('modal-page',{
+            disableFocus: true,
+        });
     })
 
 
