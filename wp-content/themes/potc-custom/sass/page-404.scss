@@ -21,10 +21,12 @@
             align-items: center;
             .error-page__title{
                 color: #fff;
+                font-weight: 600;
                 text-align: center;
             }
             .error-page__link{
                 color: #fff;
+                font-weight: 600;
                 text-align: center;
                 a{
                     color: $light-orange;

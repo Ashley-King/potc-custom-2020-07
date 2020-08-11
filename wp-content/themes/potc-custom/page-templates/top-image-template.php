@@ -11,9 +11,9 @@ $headline = get_field('top_image_headline');
 $content = get_field('top_image_content');
 ?>
 
-<section class="top-image__hero " style="background: linear-gradient(rgba(69, 159, 221, 0.8)
+<section class="top-image__hero " style="background: linear-gradient(rgba(69, 159, 221, 0.9)
 
-, rgba(69, 159, 221, 0.8)
+, rgba(69, 159, 221, 0.7)
 
 ), url(<?php echo $bg_image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
     <?php echo $headline ?>
