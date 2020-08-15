@@ -1,8 +1,16 @@
-.thank-you{
-    .thank-ewe{
-        @media(max-width: 420px){
-            width: 300px;
-            height: auto;
+.page-template-no-image-template.thank-you{
+    .no-image__content{
+        p{
+            img.thank-ewe{
+                width: 480px;
+                height: 270px;
+                @media(max-width: 420px){
+                    width: 300px !important;
+                    height: auto !important;
+                }
+            }
         }
     }
+    
+    
 }

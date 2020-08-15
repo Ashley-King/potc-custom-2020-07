@@ -244,3 +244,26 @@ a {
         background: $dark-blue;
     }
 }
+
+/**
+* COOKIE NOTICE
+*______________________________________*/
+#cookie-notice{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    a,.cookie__button{
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+        transition: $main-transition;
+        &:hover{
+            text-decoration: none;
+            
+        }
+    }
+    .cookie__button:first-of-type{
+        display: none;
+    }
+}
