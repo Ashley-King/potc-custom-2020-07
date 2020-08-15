@@ -1,0 +1,7 @@
+jQuery(document).ready(function($){function isValidEmail($form){$email=$($form).find('input[name="email"]').val();if($email.length&&$email.indexOf('@')>-1){return!0}
+return!1}
+function isValidName($form){$name=$($form).find('input[name="first_name"]').val();if($name.length&&$name!==''){return!0}
+return!1}
+function notBotz($form){$botz=$($form).find('input[name="license"]').val();if(!$botz.length||$botz===''||$botz==undefined||!$botz){return!0}
+$($form).find('input[name="first_name"]').val('');$($form).find('input[name="email"]').val('');$($form).find('input[name="license"]').val('');return!1}
+$('.form-submit').click(function(e){e.preventDefault();$form=$(this).parents('form').attr('id');$form_id='#'+$form;formData=$($form_id).serialize();if(!isValidEmail($form_id)){alert('add email')}else if(!isValidName($form_id)){alert('add name')}else if(!notBotz($form_id)){alert("no botz please")}else{$($form_id).find('input[name="first_name"]').val('');$($form_id).find('input[name="email"]').val('');$($form_id).find('input[name="license"]').val('');formSubmit()}});function formSubmit(){$.ajax({type:'POST',url:'/wp-content/themes/potc-custom/sf-submit.php',data:formData,success:function(data){location.href='https://pediatricotcourses.com/thank-you'},error:function(err){console.log(err);location.href='https://pediatricotcourses.com/thank-you'}})}})
