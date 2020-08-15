@@ -23,9 +23,6 @@
             h3{
                 color: $dark-blue;
                 font-weight: 500;
-                @media(max-width: 420px){
-                    max-width: 300px;
-                }
             }
             p.text-center {
                 
