@@ -1,0 +1,18 @@
+.newsletter-template{
+    .newsletter__content{
+        margin-top: 80px;
+        .newsletter__headline{
+            h1{
+                color: $dark-blue;
+                font-weight: 600;
+            }
+        }
+        .newsletter__post{
+            h3{
+                color: $dark-blue;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

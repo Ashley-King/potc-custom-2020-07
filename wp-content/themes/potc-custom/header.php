@@ -17,6 +17,8 @@
     if(is_home()){
         $nav_classes = 'nav--transparent';
     }
+    if ( ! defined( 'ABSPATH' ) ) 
+     exit;
 ?>
 <!DOCTYPE html>
 

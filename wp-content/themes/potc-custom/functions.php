@@ -97,19 +97,41 @@ add_action( 'wp_enqueue_scripts', 'potc_custom_register_scripts' );
  * Custom Post Type For Newsletter
  */
 function newsletter_post() {
+    $supports = array(
+    'title', // post title
+    'editor', // post content
+    'author', // post author
+    'thumbnail', // featured images
+    'excerpt', // post excerpt
+    'custom-fields', // custom fields
+    'comments', // post comments
+    'revisions', // post revisions
+    'post-formats', // post formats
+    'page-attributes', //page attributes
+    );
     $labels = array(
-      'name'               => _x( 'Newsletters', 'post type general name' ),
-      'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
-      'menu_name'          => 'Newsletters'
+    'name' => _x('Newsletters', 'plural'),
+    'singular_name' => _x('Newsletter', 'singular'),
+    'menu_name' => _x('Newsletter', 'admin menu'),
+    'name_admin_bar' => _x('Newsletter', 'admin bar'),
+    'add_new' => _x('Add New Newsletter', 'add new'),
+    'add_new_item' => __('Add New Newsletter'),
+    'new_item' => __('New Newsletter'),
+    'edit_item' => __('Edit Newsletter'),
+    'view_item' => __('View Newsletter'),
+    'all_items' => __('All Newsletters'),
+    'search_items' => __('Search Newsletter'),
+    'not_found' => __('No Newsletters found.'),
     );
     $args = array(
-      'labels'        => $labels,
-      'description'   => 'TBL Newsletter',
-      'public'        => true,
-    //   'menu_position' => 5,
-      'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
-      'has_archive'   => true,
+    'supports' => $supports,
+    'labels' => $labels,
+    'public' => true,
+    'query_var' => true,
+    'rewrite' => array('slug' => 'newsletter'),
+    'has_archive' => false,
+    'hierarchical' => false,
     );
-    register_post_type( 'product', $args ); 
-  }
-  add_action( 'init', ' newsletter_post' );
+    register_post_type('newsletter', $args);
+    }
+    add_action('init', 'newsletter_post');
