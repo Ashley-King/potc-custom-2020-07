@@ -92,3 +92,24 @@ function potc_custom_register_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'potc_custom_register_scripts' );
+
+/**
+ * Custom Post Type For Newsletter
+ */
+function newsletter_post() {
+    $labels = array(
+      'name'               => _x( 'Newsletters', 'post type general name' ),
+      'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
+      'menu_name'          => 'Newsletters'
+    );
+    $args = array(
+      'labels'        => $labels,
+      'description'   => 'TBL Newsletter',
+      'public'        => true,
+    //   'menu_position' => 5,
+      'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+      'has_archive'   => true,
+    );
+    register_post_type( 'product', $args ); 
+  }
+  add_action( 'init', ' newsletter_post' );
