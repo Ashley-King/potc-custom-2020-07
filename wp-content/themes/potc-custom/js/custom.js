@@ -49,7 +49,7 @@ jQuery(document).ready(function($){
     $('body').on("scroll", function() {
         
         
-        if($('body').scrollTop() > 20) {
+        if($('body').scrollTop() > 10) {
             $(".site-header").addClass("header-scroll");
             $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.png') ; 
         } else {
