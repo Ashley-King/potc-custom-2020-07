@@ -56,7 +56,7 @@
     background-color: transparent;
     justify-content: space-between;
     transition: $main-transition;
-    width: 40px;
+    width: 26px;
     
     cursor: pointer;
     
@@ -69,20 +69,17 @@
 }
 
 .nav__wrapper--mobile-button.nav-open{
-    width: 40px;
-    height: 40px;
-    z-index: 30;
     span{
         border-color: #fff;
     }
     .nav__mobile--top{
-        transform: rotate(45deg) translate(8px, 16px);
+        transform: rotate(45deg);
     }
     .nav__mobile--middle{
         display: none;
     }
     .nav__mobile--bottom{
-        transform: rotate(-45deg) translate(8px, -16px);
+        transform: rotate(-45deg) translate(4px, -3px);
     }
 }
     .nav__wrapper--main.container:after{

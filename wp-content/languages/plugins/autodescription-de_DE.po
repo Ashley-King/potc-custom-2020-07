@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - The SEO Framework - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-17 15:38:26+0000\n"
+"PO-Revision-Date: 2020-09-05 11:25:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,9 +15,9 @@ msgstr ""
 msgid "It's built from the page title."
 msgstr "Es wird aus dem Seitentitel generiert."
 
+#: inc/views/edit/seo-settings-tt.php:154
 #: inc/views/edit/seo-settings-singular.php:165
 #: inc/views/edit/seo-settings-singular.php:172
-#: inc/views/edit/seo-settings-tt.php:154
 msgid "Remove the site title?"
 msgstr "Seitentitel entfernen?"
 
@@ -150,6 +150,10 @@ msgstr "Wählen Inhaltsarten, die ausgeschlossen werden sollen."
 msgid "Post Type Exclusions"
 msgstr "Inhaltsarten-Ausschlüsse"
 
+#: inc/views/admin/metaboxes/general-metabox.php:426
+msgid "Default post types and taxonomies can not be excluded."
+msgstr "Standard-Beitragstypen und -Taxonomien können nicht ausgeschlossen werden."
+
 #. translators: backticks are code wraps. Markdown!
 #: inc/views/admin/metaboxes/general-metabox.php:422
 msgid "These options should not need changing when post types and taxonomies are registered correctly. When they aren't, consider applying `noindex` to purge them from search engines, instead."
@@ -174,6 +178,14 @@ msgstr "Ausschlüsse"
 #: inc/views/templates/settings/settings.php:47
 msgid "The site title is already removed from meta titles, so this option only affects the homepage."
 msgstr "Der Seitentitel wird bereits von Meta-Titeln entfernt, diese Option hat daher nur Wirkung für die Startseite."
+
+#: inc/views/templates/settings/settings.php:37
+msgid "This taxonomy's post types are also excluded, so this option won't have any effect."
+msgstr "Taxonomien dieses Beitragstyps sind ebenfalls ausgeschlossen, diese Option wird daher keinen Effekt haben."
+
+#: inc/views/templates/settings/settings.php:27
+msgid "This taxonomy is excluded, so this option won't work."
+msgstr "Diese Taxonomie ist ausgeschlossen, diese Option wird daher nicht funktionieren."
 
 #. translators: Taxonomy term archive title. 1: Taxonomy singular name, 2:
 #. Current taxonomy term
@@ -256,11 +268,11 @@ msgid "%1$s %2$s %3$s"
 msgstr "%1$s %2$s %3$s"
 
 #. translators: %s = Link, markdown.
-#: bootstrap/upgrade.php:469
+#: bootstrap/upgrade.php:464
 msgid "To take full advantage of all SEO features, please follow our [5-minute setup guide](%s)."
 msgstr "Um alle SEO-Funktionen voll nutzen zu können, folge bitte unserer [5-minütigen Anleitung](%s)."
 
-#: bootstrap/upgrade.php:465
+#: bootstrap/upgrade.php:460
 msgid "The SEO Framework automatically optimizes your website for search engines and social media."
 msgstr "The SEO Framework optimiert Ihre Website automatisch für Suchmaschinen und soziale Netzwerke."
 
@@ -425,6 +437,10 @@ msgstr "Discord zeigt den Name des Seiten-Autors über der Einbettung. Aktiviere
 msgid "Remove author name?"
 msgstr "Autor-Namen entfernen?"
 
+#: inc/views/admin/metaboxes/social-metabox.php:369
+msgid "Some social sharing services and clients, like WordPress, LinkedIn, and Discord, obtain the linked page information via oEmbed."
+msgstr "Manche Teilen-Dienste und Anwendungen wie WordPress, LinkedIn und Discord rufen die Seiteninformationen über oEmbed ab."
+
 #: inc/views/admin/metaboxes/social-metabox.php:367
 msgid "oEmbed Settings"
 msgstr "oEmbed-Einstellungen"
@@ -456,6 +472,10 @@ msgstr "WordPress, Discord, Drupal, Squarespace und viele andere Anwendungen kö
 #: inc/views/admin/metaboxes/social-metabox.php:110
 msgid "Output oEmbed scripts?"
 msgstr "oEmbed-Skripte ausgeben?"
+
+#: inc/views/templates/settings/settings.php:17
+msgid "This post type is excluded, so this option won't work."
+msgstr "Dieser Beitragstyp ist ausgeschlossen, daher wird diese Option nicht funktionieren."
 
 #: inc/classes/core.class.php:325
 msgid "Get support"
@@ -599,8 +619,8 @@ msgstr "&ndash; Keine Änderung &ndash;"
 msgid "These directives may urge robots not to display, follow links on, or create a cached copy of this term."
 msgstr "Diese Anweisungen können Robots dazu anhalten, diesen Begriff nicht zu indexieren, keinen Links zu folgen und keine Kopie im Cache zu speichern."
 
-#: inc/views/edit/seo-settings-tt.php:295 inc/views/list/quick-term.php:92
-#: inc/views/list/quick-post.php:92 inc/views/list/bulk-post.php:55
+#: inc/views/edit/seo-settings-tt.php:295 inc/views/list/quick-post.php:92
+#: inc/views/list/quick-term.php:92 inc/views/list/bulk-post.php:55
 msgid "Visibility SEO Settings"
 msgstr "Sichtbarkeits-SEO-Einstellungen"
 
@@ -608,8 +628,8 @@ msgstr "Sichtbarkeits-SEO-Einstellungen"
 msgid "Social SEO Settings"
 msgstr "Social-SEO-Einstellungen"
 
-#: inc/views/edit/seo-settings-tt.php:95 inc/views/list/quick-term.php:55
-#: inc/views/list/quick-post.php:55
+#: inc/views/edit/seo-settings-tt.php:95 inc/views/list/quick-post.php:55
+#: inc/views/list/quick-term.php:55
 msgid "General SEO Settings"
 msgstr "Allgemeine SEO-Einstellungen"
 
@@ -622,9 +642,9 @@ msgid "Exclude this page from all search queries on this site."
 msgstr "Schließe diese Seite von allen Such-Abfragen auf dieser Seite aus."
 
 #. translators: %s = default option value
+#: inc/views/edit/seo-settings-tt.php:339
 #: inc/views/edit/seo-settings-singular.php:332
-#: inc/views/edit/seo-settings-tt.php:339 inc/views/list/quick-term.php:112
-#: inc/views/list/quick-post.php:112
+#: inc/views/list/quick-post.php:112 inc/views/list/quick-term.php:112
 msgid "Default (%s)"
 msgstr "Standard (%s)"
 
@@ -636,9 +656,9 @@ msgstr "Beachte: Eine vom Standard abweichende Auswahl wird die globalen Startse
 msgid "These directives may urge robots not to display, follow links on, or create a cached copy of this page."
 msgstr "Diese Anweisungen können Robots dazu anhalten, diese Seite nicht zu indexieren, keinen Links zu folgen und keine Kopie im Cache zu speichern."
 
+#: inc/views/edit/seo-settings-tt.php:71
 #: inc/views/edit/seo-settings-singular.php:247
-#: inc/views/edit/seo-settings-tt.php:71 inc/views/list/quick-post.php:27
-#: inc/views/list/bulk-post.php:27
+#: inc/views/list/quick-post.php:27 inc/views/list/bulk-post.php:27
 msgid "Link following"
 msgstr "Link-Folgen"
 
@@ -694,8 +714,8 @@ msgstr "Mehrere Open Graph Bild-Tags ausgeben?"
 msgid "Note: These options may be overwritten by the [page settings](%s)."
 msgstr "Beachte: Diese Optionen könnten von den [Seiten-Einstellungen](%s) überschrieben werden."
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:489
 #: inc/views/edit/seo-settings-singular.php:300
+#: inc/views/admin/metaboxes/homepage-metabox.php:489
 msgid "Warning: No public site should ever apply \"noindex\" or \"nofollow\" to the homepage."
 msgstr "Warnung: Keine öffentliche Website sollte jemals \"noindex\" oder \"nofollow\" für die Startseite aktivieren."
 
@@ -718,9 +738,9 @@ msgstr "`noindex` zur Startseite hinzufügen?"
 msgid "Overwritten by page settings"
 msgstr "Überschrieben von Seiten-Einstellungen"
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:392
-#: inc/views/edit/seo-settings-singular.php:525
 #: inc/views/edit/seo-settings-tt.php:275
+#: inc/views/edit/seo-settings-singular.php:525
+#: inc/views/admin/metaboxes/homepage-metabox.php:392
 msgid "The social image URL can be used by search engines and social networks alike. It's best to use an image with a 1.91:1 aspect ratio that is at least 1200px wide for universal support."
 msgstr "Das Social Media Bild kann von Suchmaschinen und auch sozialen Netzwerken verwendet werden. Es wird empfohlen ein Bild mit 1.91:1 Seitenverhältnis und mindestens 1200px Breite für bestmöglichen Einsatz zu verwenden."
 
@@ -833,8 +853,8 @@ msgstr "Datums-Archive"
 msgid "Author pages"
 msgstr "Autoren-Seiten"
 
-#: inc/views/admin/metaboxes/general-metabox.php:434
 #: inc/views/admin/metaboxes/robots-metabox.php:321
+#: inc/views/admin/metaboxes/general-metabox.php:434
 msgid "These settings apply to the post type pages and their terms. When terms are shared between post types, all their post types should be checked for this to have an effect."
 msgstr "Diese Einstellungen werden auf Inhaltstypen und ihre Begriffe angewendet. Wenn Begriffe für mehrere Inhaltstypen genutzt werden, sollten alle Inhaltstypen geprüft werden, damit dies einen Effekt hat."
 
@@ -1402,16 +1422,16 @@ msgstr "Kalkuliert aus der gefundenen Anzahl Zeichen. Der Pixelzähler zeigt die
 msgid "%1$s (%2$s)"
 msgstr "%1$s (%2$s)"
 
-#: bootstrap/upgrade.php:732
+#: bootstrap/upgrade.php:727
 msgid "The positions in the \"Meta Title Additions Location\" setting for the homepage have been reversed, left to right, but the output has not been changed. If you must downgrade for some reason, remember to switch the location back again."
 msgstr "Die Positionen der Einstellung \"Meta-Titel Zusätze\" für die Startseite wurden getauscht, von links nach rechts, aber die Ausgabe wurde nicht verändert. Wenn du aus irgendeinem Grund auf eine frühere Plugin-Version zurück wechselst, denk daran, die Platzierung wieder zu tauschen."
 
-#: bootstrap/upgrade.php:719
+#: bootstrap/upgrade.php:714
 msgid "A cronjob is now used to ping search engines, and it alerts them to changes in your sitemap."
 msgstr "Ein Cronjob wird jetzt verwendet, um Suchmaschinen zu pingen, und es benachrichtigt sie über Änderungen in deiner Sitemap."
 
 #. translators: %s = Version number, surrounded in markdown-backticks.
-#: bootstrap/upgrade.php:425
+#: bootstrap/upgrade.php:420
 msgid "Thank you for updating The SEO Framework! Your website has been upgraded successfully to use The SEO Framework at database version `%s`."
 msgstr "Vielen Dank, dass du das SEO Framework aktualisiert hast! Deine Website wurde erfolgreich aktualisiert, um das SEO Framework mit der Datenbank-Version `%s` zu nutzen."
 
@@ -1595,39 +1615,39 @@ msgstr "Dies teilt Suchmaschinen mit, Links auf diesem Begriff nicht zu folgen."
 msgid "This tells search engines not to show this term in their search results."
 msgstr "Dies teilt Suchmaschinen mit, diesen Begriff nicht in ihren Suchergebnissen zu zeigen."
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:389
-#: inc/views/edit/seo-settings-singular.php:521
 #: inc/views/edit/seo-settings-tt.php:271
+#: inc/views/edit/seo-settings-singular.php:521
+#: inc/views/admin/metaboxes/homepage-metabox.php:389
 msgid "Social Image URL"
 msgstr "Social-Bild-URL"
 
+#: inc/views/edit/seo-settings-tt.php:355
 #: inc/views/edit/seo-settings-singular.php:390
-#: inc/views/edit/seo-settings-tt.php:355 inc/views/list/quick-term.php:125
-#: inc/views/list/quick-post.php:125
+#: inc/views/list/quick-post.php:125 inc/views/list/quick-term.php:125
 msgid "301 Redirect URL"
 msgstr "301-Weiterleitungs-URL"
 
+#: inc/views/edit/seo-settings-tt.php:302
 #: inc/views/edit/seo-settings-singular.php:265
-#: inc/views/edit/seo-settings-tt.php:302 inc/views/list/quick-term.php:95
-#: inc/views/list/quick-post.php:95
+#: inc/views/list/quick-post.php:95 inc/views/list/quick-term.php:95
 msgid "Canonical URL"
 msgstr "Kanonische URL"
 
-#: inc/views/edit/seo-settings-singular.php:174
 #: inc/views/edit/seo-settings-tt.php:156
+#: inc/views/edit/seo-settings-singular.php:174
 msgid "Use this when you want to rearrange the title parts manually."
 msgstr "Nutze dies, wenn du die Titel-Bestandteile manuell sortieren willst."
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:74
-#: inc/views/edit/seo-settings-singular.php:120
 #: inc/views/edit/seo-settings-tt.php:118
+#: inc/views/edit/seo-settings-singular.php:120
+#: inc/views/admin/metaboxes/homepage-metabox.php:74
 msgid "The meta title can be used to determine the title used on search engine result pages."
 msgstr "Der Metatitel kann genutzt werden, um den Titel in Suchergebnis-Seiten zu bestimmen."
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:70
+#: inc/views/edit/seo-settings-tt.php:114
 #: inc/views/edit/seo-settings-singular.php:116
-#: inc/views/edit/seo-settings-tt.php:114 inc/views/list/quick-term.php:58
-#: inc/views/list/quick-post.php:58
+#: inc/views/admin/metaboxes/homepage-metabox.php:70
+#: inc/views/list/quick-post.php:58 inc/views/list/quick-term.php:58
 msgid "Meta Title"
 msgstr "Meta-Titel"
 
@@ -1690,27 +1710,27 @@ msgstr "Es gibt keinen Inhalt."
 msgid "These settings do not affect sharing behavior with the social networks."
 msgstr "Diese Einstellungen haben keine Auswirkungen auf das Teilen-Verhalten in sozialen Netzwerken."
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:357
-#: inc/views/edit/seo-settings-singular.php:491
 #: inc/views/edit/seo-settings-tt.php:256
+#: inc/views/edit/seo-settings-singular.php:491
+#: inc/views/admin/metaboxes/homepage-metabox.php:357
 msgid "Twitter Description"
 msgstr "Twitter Beschreibung"
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:333
-#: inc/views/edit/seo-settings-singular.php:468
 #: inc/views/edit/seo-settings-tt.php:239
+#: inc/views/edit/seo-settings-singular.php:468
+#: inc/views/admin/metaboxes/homepage-metabox.php:333
 msgid "Twitter Title"
 msgstr "Twitter Titel"
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:308
-#: inc/views/edit/seo-settings-singular.php:447
 #: inc/views/edit/seo-settings-tt.php:224
+#: inc/views/edit/seo-settings-singular.php:447
+#: inc/views/admin/metaboxes/homepage-metabox.php:308
 msgid "Open Graph Description"
 msgstr "Open Graph Beschreibung"
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:284
-#: inc/views/edit/seo-settings-singular.php:424
 #: inc/views/edit/seo-settings-tt.php:207
+#: inc/views/edit/seo-settings-singular.php:424
+#: inc/views/admin/metaboxes/homepage-metabox.php:284
 msgid "Open Graph Title"
 msgstr "Open Graph Titel"
 
@@ -1747,13 +1767,13 @@ msgstr "Sieh dir dein Profil an."
 msgid "Connected Social Pages"
 msgstr "Verbundene soziale Seiten"
 
-#: inc/views/admin/metaboxes/schema-metabox.php:182
 #: inc/views/admin/metaboxes/sitemaps-metabox.php:374
+#: inc/views/admin/metaboxes/schema-metabox.php:182
 msgid "Setting a logo requires JavaScript."
 msgstr "Das Setzen eines Logos erfordert JavaScript."
 
-#: inc/views/admin/metaboxes/schema-metabox.php:178
 #: inc/views/admin/metaboxes/sitemaps-metabox.php:370
+#: inc/views/admin/metaboxes/schema-metabox.php:178
 msgid "Logo URL"
 msgstr "Logo-URL"
 
@@ -1817,12 +1837,12 @@ msgstr "Der Pixelzähler kalkuliert, ob deine Eingabe auf Suchmaschinen-Ergebnis
 msgid "Counter Settings"
 msgstr "Zähler-Einstellungen"
 
-#: inc/views/edit/seo-settings-singular.php:269
 #: inc/views/edit/seo-settings-tt.php:306
+#: inc/views/edit/seo-settings-singular.php:269
 msgid "This urges search engines to go to the outputted URL."
 msgstr "Dies drängt Suchmaschinen dazu, zur ausgegebenen URL zu gehen."
 
-#: bootstrap/upgrade.php:624
+#: bootstrap/upgrade.php:619
 msgid "The previous sitemap timestamp settings have been converted into new global timestamp settings."
 msgstr "Die bisherigen Sitemap-Zeitstempel-Einstellungen wurden in neue globale Zeitstempel-Einstellungen umgewandelt."
 
@@ -1864,8 +1884,8 @@ msgstr "Logo entfernen"
 msgid "Change Logo"
 msgstr "Logo ändern"
 
-#: inc/classes/admin-pages.class.php:1119
 #: inc/classes/bridges/scripts.class.php:624
+#: inc/classes/admin-pages.class.php:1119
 msgid "Select Logo"
 msgstr "Logo auswählen"
 
@@ -1966,8 +1986,8 @@ msgstr "Beachte: robots.txt-Dateien können für Installationen in Unterverzeich
 msgid "Add link to source below the feed entry content?"
 msgstr "Link zur Quelle unter Feed-Einträge hinzufügen?"
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:43
 #: inc/views/edit/seo-settings-singular.php:34
+#: inc/views/admin/metaboxes/homepage-metabox.php:43
 msgid "Social"
 msgstr "Sozial"
 
@@ -1975,7 +1995,7 @@ msgstr "Sozial"
 msgid "Visibility"
 msgstr "Sichtbarkeit"
 
-#: bootstrap/upgrade.php:599
+#: bootstrap/upgrade.php:594
 msgid "Twitter Photo Cards have been deprecated. Your site now uses Summary Cards when applicable."
 msgstr "Twitter Photo Cards sind veraltet. Deine Seite nutzt nun Summary Cards falls verfügbar."
 
@@ -1984,8 +2004,8 @@ msgctxt "Frame title"
 msgid "Select Social Image"
 msgstr "Social-Bild wählen"
 
-#: inc/classes/admin-pages.class.php:1062
 #: inc/classes/bridges/scripts.class.php:616
+#: inc/classes/admin-pages.class.php:1062
 msgctxt "Button hover"
 msgid "Select social image"
 msgstr "Social-Bild wählen"
@@ -1998,8 +2018,8 @@ msgstr "Standard-URL des Social-Media-Bildes"
 msgid "A social image can be displayed when your website is shared. It is a great way to grab attention."
 msgstr "Ein Social-Media-Bild kann angezeigt werden, wenn deine Website geteilt wird. Dies ist ein toller Weg um Aufmerksamkeit zu erregen."
 
-#: inc/views/admin/metaboxes/social-metabox.php:141
 #: inc/views/admin/metaboxes/homepage-metabox.php:378
+#: inc/views/admin/metaboxes/social-metabox.php:141
 msgid "Social Image Settings"
 msgstr "Einstellungen für das Social-Media-Bild"
 
@@ -2203,8 +2223,8 @@ msgstr "Bild entfernen"
 msgid "Change Image"
 msgstr "Bild ändern"
 
-#: inc/classes/admin-pages.class.php:1073
 #: inc/classes/bridges/scripts.class.php:615
+#: inc/classes/admin-pages.class.php:1073
 msgid "Select Image"
 msgstr "Bild wählen"
 
@@ -2355,8 +2375,8 @@ msgstr "Beispiel-Kategorie"
 msgid "Prefixes"
 msgstr "Vorspann"
 
-#: inc/views/admin/metaboxes/title-metabox.php:96
 #: inc/views/admin/metaboxes/homepage-metabox.php:38
+#: inc/views/admin/metaboxes/title-metabox.php:96
 msgid "Additions"
 msgstr "Ergänzungen"
 
@@ -2369,8 +2389,8 @@ msgstr "Der Seitentitel wird hervorgehoben sowohl im Browser Tab als auch auf de
 msgid "Automated Title Settings"
 msgstr "Einstellungen automatisierter Titel"
 
-#: inc/views/edit/seo-settings-singular.php:395
 #: inc/views/edit/seo-settings-tt.php:359
+#: inc/views/edit/seo-settings-singular.php:395
 msgid "This will force visitors to go to another URL."
 msgstr "Dies leitet Besucher zu einer anderen URL weiter."
 
@@ -2444,8 +2464,8 @@ msgstr "Kurzlink Tag ausgeben?"
 msgid "Note: Only use this option if you are aware of its SEO effects."
 msgstr "Beachte: Verwende diese Einstellung nur, wenn du ihre SEO-Auswirkungen kennst."
 
-#: inc/views/edit/seo-settings-singular.php:68
 #: inc/views/edit/seo-settings-tt.php:101
+#: inc/views/edit/seo-settings-singular.php:68
 msgid "Doing it Right"
 msgstr "Mach es richtig"
 
@@ -2462,13 +2482,13 @@ msgstr "Quelle"
 msgid "Feed Settings"
 msgstr "Einstellungen Feed"
 
-#: inc/classes/generate-title.class.php:1202
 #: inc/classes/bridges/scripts.class.php:672
+#: inc/classes/generate-title.class.php:1202
 msgid "Private: %s"
 msgstr "Privat: %s"
 
-#: inc/classes/generate-title.class.php:1187
 #: inc/classes/bridges/scripts.class.php:674
+#: inc/classes/generate-title.class.php:1187
 msgid "Protected: %s"
 msgstr "Geschützt: %s"
 
@@ -2687,10 +2707,10 @@ msgstr "Einstellungen Seiten-Kurzlink"
 msgid "Post Dates"
 msgstr "Beitragsdatum"
 
-#: inc/views/admin/metaboxes/description-metabox.php:21
-#: inc/views/admin/metaboxes/homepage-metabox.php:141
-#: inc/views/edit/seo-settings-singular.php:190
 #: inc/views/edit/seo-settings-tt.php:169
+#: inc/views/edit/seo-settings-singular.php:190
+#: inc/views/admin/metaboxes/homepage-metabox.php:141
+#: inc/views/admin/metaboxes/description-metabox.php:21
 msgid "The meta description can be used to determine the text used under the title on search engine results pages."
 msgstr "Die Meta-Beschreibung kann genutzt werden, um den Text der unter dem Suchergebnis-Titel angezeigt wird, festzulegen."
 
@@ -2732,10 +2752,11 @@ msgstr "Einstellungen Archive mit Seitennummerierung"
 #: inc/classes/builders/seobar-page.class.php:896
 #: inc/classes/builders/seobar-term.class.php:819
 #: inc/classes/builders/seobar-term.class.php:828
-#: inc/views/admin/metaboxes/robots-metabox.php:87
+#: inc/views/edit/seo-settings-tt.php:84
 #: inc/views/edit/seo-settings-singular.php:255
-#: inc/views/edit/seo-settings-tt.php:84 inc/views/list/quick-term.php:34
-#: inc/views/list/quick-post.php:34 inc/views/list/bulk-post.php:34
+#: inc/views/admin/metaboxes/robots-metabox.php:87
+#: inc/views/list/quick-post.php:34 inc/views/list/quick-term.php:34
+#: inc/views/list/bulk-post.php:34
 msgid "Archiving"
 msgstr "Archivierung"
 
@@ -2754,19 +2775,20 @@ msgstr "Folgen"
 #: inc/classes/builders/seobar-page.class.php:611
 #: inc/classes/builders/seobar-term.class.php:556
 #: inc/classes/builders/seobar-term.class.php:565
-#: inc/views/admin/metaboxes/robots-metabox.php:65
+#: inc/views/edit/seo-settings-tt.php:58
 #: inc/views/edit/seo-settings-singular.php:239
-#: inc/views/edit/seo-settings-tt.php:58 inc/views/list/quick-term.php:20
-#: inc/views/list/quick-post.php:20 inc/views/list/bulk-post.php:20
+#: inc/views/admin/metaboxes/robots-metabox.php:65
+#: inc/views/list/quick-post.php:20 inc/views/list/quick-term.php:20
+#: inc/views/list/bulk-post.php:20
 msgid "Indexing"
 msgstr "Indexierung"
 
-#: inc/views/admin/metaboxes/social-metabox.php:21
-#: inc/views/admin/metaboxes/title-metabox.php:91
-#: inc/views/admin/metaboxes/homepage-metabox.php:33
+#: inc/views/edit/seo-settings-singular.php:29
 #: inc/views/admin/metaboxes/sitemaps-metabox.php:21
 #: inc/views/admin/metaboxes/robots-metabox.php:59
-#: inc/views/edit/seo-settings-singular.php:29
+#: inc/views/admin/metaboxes/homepage-metabox.php:33
+#: inc/views/admin/metaboxes/social-metabox.php:21
+#: inc/views/admin/metaboxes/title-metabox.php:91
 msgid "General"
 msgstr "Allgemein"
 
@@ -2790,13 +2812,13 @@ msgstr "Suchseiten"
 msgid "Category"
 msgstr "Kategorie"
 
-#: inc/views/admin/metaboxes/title-metabox.php:214
 #: inc/views/admin/metaboxes/homepage-metabox.php:258
+#: inc/views/admin/metaboxes/title-metabox.php:214
 msgid "Right:"
 msgstr "Rechts:"
 
-#: inc/views/admin/metaboxes/title-metabox.php:204
 #: inc/views/admin/metaboxes/homepage-metabox.php:248
+#: inc/views/admin/metaboxes/title-metabox.php:204
 msgid "Left:"
 msgstr "Links:"
 
@@ -2808,10 +2830,10 @@ msgstr "Dies sagt Suchmaschinen, Links auf dieser Seite nicht zu folgen."
 msgid "This tells search engines not to show this page in their search results."
 msgstr "Dies sagt Suchmaschinen, diese Webseite nicht in deren Suchergebnissen zu zeigen."
 
-#: inc/views/admin/metaboxes/homepage-metabox.php:137
+#: inc/views/edit/seo-settings-tt.php:165
 #: inc/views/edit/seo-settings-singular.php:186
-#: inc/views/edit/seo-settings-tt.php:165 inc/views/list/quick-term.php:75
-#: inc/views/list/quick-post.php:75
+#: inc/views/admin/metaboxes/homepage-metabox.php:137
+#: inc/views/list/quick-post.php:75 inc/views/list/quick-term.php:75
 msgid "Meta Description"
 msgstr "Meta-Beschreibung"
 
@@ -2987,9 +3009,9 @@ msgid "Webmaster Meta Settings"
 msgstr "Einstellungen Webmaster-Meta"
 
 #: inc/classes/bridges/seosettings.class.php:139
-#: inc/views/admin/metaboxes/homepage-metabox.php:438
-#: inc/views/edit/seo-settings-singular.php:286
 #: inc/views/edit/seo-settings-tt.php:320
+#: inc/views/edit/seo-settings-singular.php:286
+#: inc/views/admin/metaboxes/homepage-metabox.php:438
 msgid "Robots Meta Settings"
 msgstr "Einstellungen Robots-Meta"
 
