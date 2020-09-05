@@ -23,10 +23,7 @@ jQuery(document).ready(function($){
     });
 
     //show/hide mobile nav
-    $('.nav__wrapper--mobile-button').click(function(){
-        $(this).toggleClass('nav-open');
-        $('.nav__mobile__background').toggleClass('show-nav-bg');
-        $('.nav__wrapper--mobile').toggleClass('show-mobile-nav')
+    function navStyles(){
         if(!$('.nav__wrapper--main').hasClass('nav--transparent') && $('.nav__wrapper--mobile-button').hasClass('nav-open')){
             $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.png') ;
             $('.nav__wrapper--main').css('border-bottom', 'none');
@@ -35,10 +32,19 @@ jQuery(document).ready(function($){
             $('.nav__logo img').attr('src', $image) ;
             $('.nav__wrapper--main').css('border-bottom', '1px solid rgba(0, 0, 0, 0.1)');
         }
+    }//navStyles
+  
+
+    $('.nav__wrapper--mobile-button').click(function(){
+        $(this).toggleClass('nav-open');
+        $('.nav__mobile__background').toggleClass('show-nav-bg');
+        $('.nav__wrapper--mobile').toggleClass('show-mobile-nav')
+        navStyles();
 
        
     }); 
-  
+
+    
     
 
 
@@ -46,10 +52,8 @@ jQuery(document).ready(function($){
      * control bg of header on scroll
      */
     
-    $('body').on("scroll", function() {
-        
-        
-        if($('body').scrollTop() > 10) {
+    $(window).on("scroll", function() {  
+        if($(window).scrollTop() > 10) {
             $(".site-header").addClass("header-scroll");
             $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.png') ; 
         } else {
@@ -59,7 +63,10 @@ jQuery(document).ready(function($){
         }
         
     });
-    //functions for modals
+    
+    /**
+     * FUNCTIONS FOR MODALS
+     */
     function changeIndex(el){
         $(el).addClass('change-index');
 
@@ -98,7 +105,15 @@ jQuery(document).ready(function($){
         });
     })
 
-
+    /**
+     * ANCHOR TAG SCROLL
+     */
+if (window.location.hash) {
+    var hash = window.location.hash;
+    $('html, body').animate({
+        scrollTop :  $(hash).offset().top - 80
+    }, 500);
+  };
 
 
 

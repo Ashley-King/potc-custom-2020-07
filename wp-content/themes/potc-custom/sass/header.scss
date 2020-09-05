@@ -1,9 +1,6 @@
 
-
-
 .site-header{
     height: 80px;
-    
     position: fixed;
     width: 100%;
     z-index: 20;
@@ -59,7 +56,7 @@
     background-color: transparent;
     justify-content: space-between;
     transition: $main-transition;
-    width: 26px;
+    width: 40px;
     
     cursor: pointer;
     
@@ -72,17 +69,20 @@
 }
 
 .nav__wrapper--mobile-button.nav-open{
+    width: 40px;
+    height: 40px;
+    z-index: 30;
     span{
         border-color: #fff;
     }
     .nav__mobile--top{
-        transform: rotate(45deg);
+        transform: rotate(45deg) translate(8px, 16px);
     }
     .nav__mobile--middle{
         display: none;
     }
     .nav__mobile--bottom{
-        transform: rotate(-45deg) translate(4px, -3px);
+        transform: rotate(-45deg) translate(8px, -16px);
     }
 }
     .nav__wrapper--main.container:after{
@@ -92,7 +92,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 0;
+   padding-top: 20px;
+   padding-bottom: 20px;
         border-bottom: 1px solid $grey-border;
         @media(max-width: 399px){
             padding: 20px;

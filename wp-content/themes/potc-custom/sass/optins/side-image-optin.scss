@@ -52,17 +52,45 @@
                 width: 50%;
             }
             @media(max-width: 1112px){
-                width: 60%;
+                width: 65%;
+            }
+            @media(max-width: 767px){
+                width: 85%;
+            }
+            @media(max-width: 480px){
+                width: 80%;
+            }
+            @media(max-width: 420px){
+                width: 90%;
+            }
+            @media(max-width: 412px){
+                width: 95%;
             }
             .in-post__form__text{
-                
+                @media(max-width: 1112px){
+                    text-align:center;
+                }
                 .text{
-                    font-size: 2.0rem;
-                    color: $orange;
+                    font-size: 27px;
+                    margin-bottom: 10px;
                     max-width: 90%;
+                    @media(max-width: 1180px){
+                        
+                        max-width: 100%;
+                        font-size: 25px;
+                    }
                     @media(max-width: 768px){
                         
                         margin:0 auto;
+                    }
+                    @media(max-width: 600px){
+                        font-size: 22px;;
+                    }
+                    @media(max-width: 400px){
+                        max-width: 100%;
+                    }
+                    @media(max-width: 375px){
+                        font-size: 21px;;
                     }
                 }
                 
@@ -72,8 +100,12 @@
         form{
             width: 90%;
             margin-bottom: 0;
+            @media(max-width: 1110px){
+                width: 100%;
+            }
             input{
                 width: 100%;
+                margin-bottom: 10px;
                 color: $text-color;
                 &:focus{
                     
@@ -90,11 +122,12 @@
                     text-transform: uppercase;
                     font-weight: 600;
                     font-size: 20px;
-                    border: 1px solid $light-grey;
+                    border: none;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    // padding: 20px 10px;
+                    height: 40px;
+                    border-radius: 3px;
                     &:hover{
                         background-color: $dark-green;
                     }
@@ -110,7 +143,7 @@
         padding: 20px 0;
     }
     .in-post__section .in-post__section__wrapper .in-post__form{
-        width: 100%;
+        // width: 75%;
         justify-content: center;
     }
     .in-post__section .in-post__section__wrapper{
@@ -125,9 +158,3 @@
     }
 }
 
-@media(max-width: 480px){
-    
-    .in-post__section .in-post__section__wrapper .in-post__form .in-post__form__text .text{
-        font-size: 16px;
-    }
-}

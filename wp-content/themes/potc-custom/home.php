@@ -7,8 +7,8 @@ if(!$list){
 }
 
 ?>
-<section class="blog__hero" style="background: linear-gradient(rgba(69, 159, 221, 0.7)
-, rgba(69, 159, 221, 0.6)
+<section class="blog__hero" style="background: linear-gradient(rgba(0,0,0, 0.7)
+, rgba(0,0,0, 0.6)
 
 ), url('/wp-content/themes/potc-custom/images/girl-sidewalk-chalk.png'); background-position: center center; background-repeat: no-repeat; background-size: cover;">
     

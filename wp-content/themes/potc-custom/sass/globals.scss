@@ -1,67 +1,164 @@
 /**
-*GLOBAL STYLES AND VARIABLES
+*GLOBAL STYLES 
 **/
 
-/* VARIABLES  */
-$dark-green: #53beb4;
-$bright-green: #2fc3b5;
-$medium-green: #97D8D1;
-$light-green: #def3ec;
-$blue-overlay: rgba(69, 159, 221, 0.8)
-;
-$original-blue:rgb(39, 118, 159);
-$dark-blue:  rgb(69, 159, 221);
-$medium-blue: #00a0d6;
-$pink: #f53a63;
-$light-pink:#ffb0b6;
-$orange:#ff8247;
-$light-orange: #fbc181;
-$light-purple: #e2bfdf;
-$text-color: #5f5f5f;
-$text-color-light: rgba(95, 95, 95, .7);
-$orange-overlay: rgba(255, 130, 71, .3);
-$white-overlay: rgba(255, 255, 255, .75);
-$main-transition: all 0.3s linear;
-$grey-border: rgba(0, 0, 0, 0.1);
-$light-grey: #efefef;
-$box-shadow: -1px 2px 5px -1px #cecece;
-$shadow-grey: #cecece;
+/***
+BASE
+**************************************/
+/**********************************************
+ * BASE STYLES
+ *********************************************/
 
-
-*,
+ *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     word-break: break-word;
     word-wrap: break-word;
 }
-
-html,
-body {
+  html,
+  body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+    font-size: $font-size-body;
+    line-height: $line-height-body;
+        -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      color: $text-color;
+      font-family: $poppins;
+  }
+  html{
     position: relative;
-    overflow-x: hidden;
+    min-height: 100%;
+  }
+  
+ 
+  
+  
+  ul,
+  ol,
+  dl,
+  hr,
+  table,
+  blockquote {
+    margin-bottom: $line-height-body;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  h1[class],
+  h2[class],
+  h3[class],
+  h4[class],
+  h5[class],
+  h6[class],
+  h1:last-child,
+  h2:last-child,
+  h3:last-child,
+  h4:last-child,
+  h5:last-child,
+  h6:last-child,
+  p:last-child,
+  ul:last-child,
+  ol:last-child,
+  dl:last-child,
+  table:last-child,
+  blockquote:last-child {
+    margin: 0;
+  }
+  
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
     color: $text-color;
-}
+    font-family: $poppins;
+    font-weight: $regular;
+    line-height: $line-height-body;
+    text-rendering: optimizeLegibility;
+    
+  }
+  input{
+      border: 1px solid $light-grey;
+      cursor: pointer;
+    height: 40px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: #fff;
+    
+  }
+  :focus,
+  .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+  }
 
-.container {
-    max-width: 1200px;
-}
+  input:-internal-autofill-selected,
+  input:focus,
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[name="first_name"]:focus,
+  input[name="email"]:focus{
+      background-color: #fff !important;
+      color: $text-color !important;
+      -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    color: $text-color !important;
+    -webkit-text-fill-color: $text-color !important;
+    font-weight: $semi-bold;
+  }
+  table,
+  tr,
+  th,
+  td,
+  div,
+  span{
+    box-sizing: border-box;
+  }
+  /**********************************************
+   * TYPOGRAPHY
+   *********************************************/
+  
+   h1{
+     font-size: 40px;
+     font-weight: $semi-bold;
+     line-height: 44px;
+     letter-spacing: 0;
+   }
+  
+   h2{
+     font-size: 28px;
+     font-weight: $semi-bold;
+     line-height: 36px;
+     letter-spacing: 0;
+   }
+  
+   h3{
+     font-size: 21px;
+     font-weight: $semi-bold;
+     line-height: 26px;
+     letter-spacing: 0;
+   }
+  
+  
+   /**********************************************
+   * LINKS
+   *********************************************/
 
 a {
     color: $orange;
@@ -73,139 +170,14 @@ a {
     }
 }
 
-.small-button {
-    background-color: $orange;
-    box-shadow: 3px 3px 0px $light-orange;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 600;
-    // letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 1;
-    padding: 10px 12px;
-    text-decoration: none;
-    white-space: normal;
-    width: auto;
-
-    &:hover {
-        background-color: $medium-green;
-        box-shadow: 3px 3px 0px $light-green;
-        color: #fff;
-    }
-}
-
-.pill-button {
-    border-style: solid;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-left-width: 0;
-    border-bottom-width: 0;
-    border-color: #ff8247;
-    background-color: #ff8247;
-    color: #ffffff;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1;
-
-    text-transform: uppercase;
-    border-radius: 50px;
-    padding-top: 12px;
-    padding-right: 30px;
-    padding-bottom: 12px;
-    padding-left: 30px;
-    text-decoration: none;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-
-    &:hover {
-        background-color: $medium-green;
-        border-color: $medium-green;
-        color: #fff;
-    }
-}
-
-//helpers
-
-.site-header.header-scroll {
-    background-color: $dark-blue;
-}
-
-.white-space {
-    white-space: nowrap;
-}
 
 
-.green-text {
-    color: $dark-green;
-}
-
-.uppercase-bold {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.hide {
-    display: none !important;
-}
-
-.show-flex {
-    display: flex !important;
-}
-
-.show {
-    display: block !important;
-}
-
-.text-center{
-    text-align: center;
-}
+/***
+HELPERS
+**************************************/
 
 
 
-//STYLED ELEMENTS
-.main-content {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 680px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-}
-
-.styled-list-asterisk {
-    list-style: none;
-    margin-left: 30px;
-
-    li {
-        list-style-type: none;
-        text-indent: -1em;
-        padding-left: 1em;
-
-        list-style-position: outside;
-
-        &:before {
-            content: '\2733\00FE0E';
-            color: $dark-blue;
-            font-weight: bold;
-            display: inline-block;
-            width: 16px;
-
-
-        }
-    }
-}
 
 /**
 * POST CATEGORIES

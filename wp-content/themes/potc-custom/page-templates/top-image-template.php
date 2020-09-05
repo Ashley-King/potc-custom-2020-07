@@ -15,16 +15,25 @@ if(!$list){
 }
 ?>
 
-<section class="top-image__hero " style="background: linear-gradient(rgba(69, 159, 221, 0.9)
+<section class="top-image__hero " style="background: linear-gradient(rgba(0,0,0, 0.75)
 
-, rgba(69, 159, 221, 0.7)
+, rgba(0,0,0,0.75)
 
 ), url(<?php echo $bg_image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+    <div class="top-image__hero__text container">
     <?php echo $headline ?>
+    <div class="top-image__hero__cta flex-col justify-center align-center">
     <a href="#" class="pill-button hero-button" id="modal-page-open">Join Us!</a></div>
+    </div>
+   
+    </div>
+    
 </section>
 <section class="top-image__content main-content container">
-    <?php echo $content ?>
+  <div class="max-width">
+  <?php echo $content ?>
+  </div>
+    
     <div class="modal micromodal-slide" id="modal-page" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-page-title">

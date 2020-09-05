@@ -110,7 +110,10 @@
         text-align:center;
         line-height: 1;
         @media(max-width: 600px){
-          font-size: 3rem;
+          font-size: 25px;
+        }
+        @media(max-width: 420px){
+          font-size: 23px;
         }
         @media(max-width: 420px){
           .white-space{
@@ -127,7 +130,10 @@
         text-align:center;
         font-weight: 400;
         @media(max-width: 600px){
-          font-size: 2rem;
+          font-size: 20px;
+        }
+        @media(max-width: 420px){
+          font-size: 18px;
         }
       }
       p{
@@ -143,7 +149,10 @@
           max-width: 100%;
         }
         @media(max-width: 600px){
-          font-size: 1.8rem;
+          font-size: 18px;
+        }
+        @media(max-width: 420px){
+          font-size: 16px;
         }
       }
     }

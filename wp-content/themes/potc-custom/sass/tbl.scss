@@ -1,0 +1,20 @@
+.tbl{
+    .top-image__hero {
+        .top-image__hero__text {
+            h1{
+                @media(max-width: 767px){
+                    font-size: 45px !important;
+                }
+                @media(max-width: 480px){
+                    font-size: 40px !important;
+                }
+                @media(max-width: 412px){
+                    font-size: 35px !important;
+                }
+                @media(max-width: 380px){
+                    font-size: 30px !important;
+                }
+            }
+        }
+    }
+} 

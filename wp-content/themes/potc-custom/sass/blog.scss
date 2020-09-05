@@ -2,7 +2,7 @@
     .blog__hero {
 
 
-        margin-top: -80px;
+        // margin-top: -80px;
         padding: 230px 0 150px 0;
 
         @media(min-width:1920px) {
@@ -13,9 +13,9 @@
         }
         h1 {
             font-weight: 700;
-            font-size: 6.5rem;
-            line-height: 1;
-            letter-spacing: 0;
+            font-size: 60px;
+            line-height: 1.1;
+            
             text-align: center;
             color: #fff;
             max-width: 80%;

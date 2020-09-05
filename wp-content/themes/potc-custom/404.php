@@ -8,7 +8,7 @@ if(!$list){
 
 <section class="error-page">
 <div class="error-page__content">
-<h1 class="error-page__title">Oops...there's nothing here.</h1>
+<h1 class="error-page__title">Oopsie...there's nothing here.</h1>
     <p class="error-page__link">Head back <a href="/">home</a>.</p>
     <a href="#" class="pill-button" id="modal-error-open">Join Us!</a>
 </div>

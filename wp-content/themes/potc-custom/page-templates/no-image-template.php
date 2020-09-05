@@ -12,7 +12,10 @@ $content = get_field('no_image_content');
 ?>
 
 <section class="no-image__content main-content container">
+    <div class="max-width">
     <?php echo $content ?>
+    </div>
+    
 </section>
 <?php get_template_part('/optins/side-image-optin') ?>
 

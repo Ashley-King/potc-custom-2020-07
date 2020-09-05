@@ -11,11 +11,11 @@ get_header();
 ?>
 
 <section class="newsletter__content main-content container">
-    <div class="newsletter__headline">
+    <div class="newsletter__headline max-width">
     <?php echo $headline ?>
     
     </div>
-    <div class="newsletter__post">
+    <div class="newsletter__post max-width">
     <?php echo $content ?>
     </div>
 
