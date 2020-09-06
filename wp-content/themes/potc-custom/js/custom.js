@@ -52,17 +52,17 @@ jQuery(document).ready(function($){
      * control bg of header on scroll
      */
     
-    $(window).on("scroll", function() {  
-        if($(window).scrollTop() > 10) {
-            $(".site-header").addClass("header-scroll");
-            $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.png') ; 
-        } else {
-            //remove the background property so it comes transparent again (defined in your css)
-           $(".site-header").removeClass("header-scroll");
-           $('.nav__logo img').attr('src', $image) ;
-        }
+    // $(window).on("scroll", function() {  
+    //     if($(window).scrollTop() > 10) {
+    //         $(".site-header").addClass("header-scroll");
+    //         $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.png') ; 
+    //     } else {
+    //         //remove the background property so it comes transparent again (defined in your css)
+    //        $(".site-header").removeClass("header-scroll");
+    //        $('.nav__logo img').attr('src', $image) ;
+    //     }
         
-    });
+    // });
     
     /**
      * FUNCTIONS FOR MODALS

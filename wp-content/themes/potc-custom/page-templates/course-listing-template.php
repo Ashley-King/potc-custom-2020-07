@@ -81,7 +81,7 @@ $cta_text = $cta;
 </section><!-- course-listing__hero -->
 <section class="course-listing__content main-content container">
   <div class="courses-headline">
-    <h2>On Demand Training for Pediatric OT's</h2>
+    <h2>On Demand Training for <span class="white-space">Pediatric OT's</span></h2>
     <div class="divider"></div>
   </div><!-- courses-headline-->
   <div class="course-listing__courses flex-row justify-between align-start">
