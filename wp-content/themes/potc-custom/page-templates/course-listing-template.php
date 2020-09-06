@@ -101,7 +101,7 @@ $cta_text = $cta;
       <div class="course-learn-more flex-row justify-start align-center">
         <div class="learn-more__image">
         <svg xmlns="http://www.w3.org/2000/svg" width="24.801" height="14.273" viewBox="0 0 24.801 14.273">
-  <g id="back" transform="translate(0 116.571) rotate(-90)">
+  <g id="down-arrow" transform="translate(0 116.571) rotate(-90)">
     <g id="Group_1" data-name="Group 1" transform="translate(102.298 0)">
       <path id="Path_1" data-name="Path 1" d="M104.758,12.407,116.272,1.629a.912.912,0,0,0,0-1.349,1.07,1.07,0,0,0-1.442,0L102.6,11.732a.912.912,0,0,0,0,1.349l12.235,11.452a1.069,1.069,0,0,0,1.442-.023.911.911,0,0,0,0-1.326Z" transform="translate(-102.298 0)" fill="#ff8247"/>
     </g>

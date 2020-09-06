@@ -61,7 +61,7 @@
        .courses-headline{
            h2{
            
-                font-weight: 700;
+                font-weight: $light;
                 color: $dark-green;
                 text-transform: capitalize;
                 text-align: center;
@@ -71,7 +71,7 @@
            .divider{
             width: 129px;
             height: 5px;
-            background: $light-orange;
+            background: $dark-green;
             margin: 40px auto;
            }
        }//headline
@@ -179,7 +179,9 @@
                             font-weight: $semi-bold;
                         }
                     }
-                    ul{
+                    .styled-list-asterisk{
+                        padding-left: 16px;
+                        margin-left: 0;
                         li{}
                     }
                 }//content
