@@ -14,7 +14,7 @@
     if($nav_class){
         $nav_classes = $nav_class;
     }
-    if(is_home() || is_404()){
+    if(is_home() || is_404() ){
         $nav_classes = 'nav--transparent';
     }
     if ( ! defined( 'ABSPATH' ) ) 

@@ -104,6 +104,33 @@ jQuery(document).ready(function($){
             disableFocus: true,
         });
     })
+    $('#modal-courses-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('modal-courses',{
+            disableFocus: true,
+        });
+    })
+    $('#course-going-pro-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('course-going-pro',{
+            disableFocus: true,
+        });
+    })
+    $('#course-getting-paid-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('course-getting-paid',{
+            disableFocus: true,
+        });
+        
+    })
+
+    $('#course-report-revamp-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('course-report-revamp',{
+            disableFocus: true,
+        });
+        
+    })
 
     /**
      * ANCHOR TAG SCROLL

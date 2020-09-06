@@ -2,6 +2,13 @@
     $text = get_field('side_image_optin_text');
     $image = get_field('side_image_optin_image');
     $list = get_field('side_image_list');
+    $list_id = "";
+    if(!$list){
+        $list_id = '17065';
+    }else{
+      $list_id = $list;
+    }
+
 ?>
 <?php if($image): ?>
 <section class="in-post__section">
@@ -21,7 +28,7 @@
 <input type="email" placeholder="Email" name="email" required />
 <!-- no botz please -->
 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="license" tabindex="-1" value="" autocomplete="false" /></div>
-<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="list" tabindex="-1" value="<?php echo $list ?>" autocomplete="false" /></div>
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="list" tabindex="-1" value="<?php echo $list_id ?>" autocomplete="false" /></div>
 
 <p><button class="form-submit" type="submit">Sign Me Up!</button></p>
 </form>			

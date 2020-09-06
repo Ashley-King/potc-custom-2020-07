@@ -9,10 +9,21 @@ get_header();
 $bg_image = get_field('top_image_hero_image');
 $headline = get_field('top_image_headline');
 $content = get_field('top_image_content');
-$list="";
+$list= get_field('top_image_list_id');
+$cta= get_field('top_image_cta');
+$cta_text="";
+$list_id = '';
 if(!$list){
-    $list = '';
+    $list_id = '17065';
+}else{
+  $list_id = $list;
 }
+if(!$cta){
+  $cta_text = "Join Us!";
+}else{
+  $cta_text = $cta;
+}
+
 ?>
 
 <section class="top-image__hero " style="background: linear-gradient(rgba(0,0,0, 0.75)
@@ -23,7 +34,7 @@ if(!$list){
     <div class="top-image__hero__text container">
     <?php echo $headline ?>
     <div class="top-image__hero__cta flex-col justify-center align-center">
-    <a href="#" class="pill-button hero-button" id="modal-page-open">Join Us!</a></div>
+    <a href="#" class="pill-button hero-button" id="modal-page-open"><?php echo $cta_text ?></a></div>
     </div>
    
     </div>
@@ -58,10 +69,15 @@ if(!$list){
 <!-- no botz please -->
 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="license"
 " tabindex="-1" value="" autocomplete="offload" /></div>
-<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="list" tabindex="-1" value="<?php echo $list ?>" autocomplete="offload" /></div>
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="list" tabindex="-1" value="<?php echo $list_id ?>" autocomplete="offload" /></div>
                   <button type="submit" class="form-submit" id="modal-page-submit">Sign Me Up!</button>
               </form>
           </div>
+          </main>
+       
+      </div>
+    </div>
+  </div>
           <!--MODAL-->
 </section>
 <?php get_template_part('/optins/side-image-optin') ?>

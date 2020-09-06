@@ -69,5 +69,6 @@ get_header();
       </div>
     </div>
   </div>
+  <!--MODAL-->
   <?php
 get_footer();

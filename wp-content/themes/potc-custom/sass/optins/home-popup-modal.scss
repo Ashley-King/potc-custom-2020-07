@@ -1,7 +1,7 @@
 /**************************\
   Basic Modal Styles
 \**************************/
-.home, .blog, .about, .tbl, .error404{
+.home, .blog, .about, .tbl, .error404, .courses{
   .modal {
     font-family: 'Poppins', sans-serif;
   }
@@ -309,4 +309,41 @@
   .micromodal-slide .modal__overlay {
     will-change: transform;
   }
+
+  .course-box-modal{
+    .modal__overlay{
+      .modal__container{
+        background-image: none;
+        background-color: #fff;
+        max-height: 100vh;
+        height: auto;
+        .modal__header{
+          .modal__close__button{
+            color:$pink;
+            padding-right: 20px;
+            padding-bottom: 0;
+            &:hover{
+              color: $orange;
+            }
+          }
+        }//header
+      }//container
+      .modal__content{
+        background-color: #fff;
+        margin-top: 0;
+        .modal__content__header{
+          .success-message{
+            display: none;
+          }
+        }
+        .modal__content__form{
+          form{
+            button{}
+          }
+          
+        }//modal__content__form
+      }//modal__content
+    }//modal__overlay
+  }//coures-box-modal
+
 }

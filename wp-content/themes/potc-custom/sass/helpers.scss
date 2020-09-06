@@ -230,9 +230,9 @@ STYLED ELEMENTS
         list-style-type: none;
         text-indent: -1em;
         padding-left: 1em;
-
+        margin-bottom: 16px;
         list-style-position: outside;
-
+        max-width: 650px;
         &:before {
             content: '\2733\00FE0E';
             color: $dark-blue;
