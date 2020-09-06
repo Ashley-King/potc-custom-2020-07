@@ -82,6 +82,7 @@ $cta_text = $cta;
 <section class="course-listing__content main-content container">
   <div class="courses-headline">
     <h2>On Demand Training for Pediatric OT's</h2>
+    <div class="divider"></div>
   </div><!-- courses-headline-->
   <div class="course-listing__courses flex-row justify-between align-start">
     <?php foreach($courses as $course): ?>
@@ -90,17 +91,32 @@ $cta_text = $cta;
       <div class="course-name">
         <?php echo $course['course_name'] ?>
       </div><!-- ccourse-name -->
-      <div class="course-image">
-        <img src="<?php echo $course['course_image']['url'] ?>" alt="<?php echo $course['course_image']['alt'] ?>">
+      <div class="course-image" style="background-image:url('<?php echo $course['course_image']['url'] ?>');">
+        
 
       </div><!-- ccourse-image -->
       <div class="course-description">
         <?php echo $course['course_description'] ?>
       </div><!-- ccourse-description -->
+      <div class="course-learn-more flex-row justify-start align-center">
+        <div class="learn-more__image">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24.801" height="14.273" viewBox="0 0 24.801 14.273">
+  <g id="back" transform="translate(0 116.571) rotate(-90)">
+    <g id="Group_1" data-name="Group 1" transform="translate(102.298 0)">
+      <path id="Path_1" data-name="Path 1" d="M104.758,12.407,116.272,1.629a.912.912,0,0,0,0-1.349,1.07,1.07,0,0,0-1.442,0L102.6,11.732a.912.912,0,0,0,0,1.349l12.235,11.452a1.069,1.069,0,0,0,1.442-.023.911.911,0,0,0,0-1.326Z" transform="translate(-102.298 0)" fill="#ff8247"/>
+    </g>
+  </g>
+</svg>
+
+        </div><!-- learn-more__image -->
+        
+        <p class="learn-more__text">More Info</p>
+      </div><!-- course-learn-more -->
+        
       <div class="course-content">
         <?php echo $course['course_content'] ?>
       </div><!-- ccourse-content -->
-      <div class="course-cta">
+      <div class="course-cta flex-col justify-start align-start">
         <a href="#" class="course-cta-button"id="<?php echo $course['course_class'] ?>-open"><?php echo $course['course_cta']?></a>
 
       </div><!-- course-cta -->

@@ -142,6 +142,13 @@ if (window.location.hash) {
     }, 500);
   };
 
+  /**
+     * COURSE LEARN MORE
+     */
+    $('.course-learn-more').click(function(){
+        $(this).toggleClass('active');
+        $(this).siblings('.course-content').slideToggle();
+    })
 
 
 })//end doc ready
