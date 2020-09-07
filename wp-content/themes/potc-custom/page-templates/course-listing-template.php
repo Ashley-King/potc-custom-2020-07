@@ -28,9 +28,9 @@ $cta_text = $cta;
 ?>
 
 <section class="course-listing__hero "
-  style="background: linear-gradient(rgba(0,0,0, 0.75)
+  style="background: linear-gradient(rgba(0,0,0, 0.6)
 
-, rgba(0,0,0,0.75)
+, rgba(0,0,0,0.7)
 
 ), url(<?php echo $bg_image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
   <div class="course-listing__hero__text container">
