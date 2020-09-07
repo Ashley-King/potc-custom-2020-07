@@ -81,7 +81,7 @@ $cta_text = $cta;
 </section><!-- course-listing__hero -->
 <section class="course-listing__content main-content container">
   <div class="courses-headline">
-    <h2>On Demand Training for <span class="white-space">Pediatric OT's</span></h2>
+    <h2>On-Demand Training for <span class="white-space">Pediatric OT's</span></h2>
     <div class="divider"></div>
   </div><!-- courses-headline-->
   <div class="course-listing__courses flex-row justify-between align-start">
@@ -134,6 +134,7 @@ $cta_text = $cta;
                  <div class="modal__content__header">
                      <h2 class="join-message">Join The Waitlist for <?php echo strip_tags($course['course_name'])?>!</h2>
                      <h2 class="success-message">You're In!</h2>
+                     <p class="success-confirm">Please check your email to confirm your subscription.</p>
                  </div>
                  <!-- header -->
                 <div class="modal__content__form">

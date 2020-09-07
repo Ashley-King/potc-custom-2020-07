@@ -4,7 +4,7 @@
     $list = get_field('side_image_list');
     $list_id = "";
     if(!$list){
-        $list_id = '17065';
+        $list_id = '41665';
     }else{
       $list_id = $list;
     }

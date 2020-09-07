@@ -337,9 +337,15 @@
           .success-message{
             display: none;
           }
+          .success-confirm{
+            display: none;
+          }
         }
         .modal__content__form{
           form{
+            input{
+              padding: 5px;
+            }
             button{}
           }
           

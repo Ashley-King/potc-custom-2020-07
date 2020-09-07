@@ -84,7 +84,7 @@ jQuery(document).ready(function($){
         $form = $(this).parents('form').attr('id');
         $form_id = '#' + $form;
         formData = $($form_id).serialize();
-         console.log(formData);
+        //  console.log(formData);
         // formData = JSON.stringify(formData);
         
         if(!isValidEmail($form_id)){
@@ -115,13 +115,19 @@ jQuery(document).ready(function($){
                 $header = $($id).parents('.modal__content__form').siblings('.modal__content__header');
                 $($header).find('.join-message').hide();
                 $($header).find('.success-message').show();
+                $($header).find('.success-confirm').show();
                 $($header).siblings('.modal__content__form').children('form').hide();
 
             },
             error: function(err){
                 
                 console.log(err);
-                location.href = 'https://pediatricotcourses.com/thank-you';
+                // location.href = 'https://pediatricotcourses.com/thank-you';
+                $header = $($id).parents('.modal__content__form').siblings('.modal__content__header');
+                $($header).find('.join-message').hide();
+                $($header).find('.success-message').show();
+                $($header).find('.success-confirm').show();
+                $($header).siblings('.modal__content__form').children('form').hide();
             }
           });
     }//courseFormSubmit
