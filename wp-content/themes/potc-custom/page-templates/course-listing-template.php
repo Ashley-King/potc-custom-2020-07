@@ -132,7 +132,7 @@ $cta_text = $cta;
              </header>
              <div class="modal__content" id="<?php echo $course['course_class'] ?>">
                  <div class="modal__content__header">
-                     <h2>Join The Waitlist for <?php echo strip_tags($course['course_name'])?>!</h2>
+                     <h2 class="join-message">Join The Waitlist for <?php echo strip_tags($course['course_name'])?>!</h2>
                      <h2 class="success-message">You're In!</h2>
                  </div>
                  <!-- header -->
@@ -144,9 +144,9 @@ $cta_text = $cta;
                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                          name="license" " tabindex=" -1" value="" autocomplete="offload" /></div>
                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="list"
-                         tabindex="-1" value="<?php echo $course['course_list'] ?>" autocomplete="offload" />
+                         tabindex="-1" value="<?php echo $course['course_list_id'] ?>" autocomplete="offload" />
                  </div>
-                 <button type="submit" class="form-submit" id="<?php echo $course['course_class'] ?>-submit">Sign Me Up!</button>
+                 <button type="submit" class="course-form-submit" id="<?php echo $course['course_class'] ?>-submit">Sign Me Up!</button>
                  </form>
          </div><!-- form-->
 

@@ -316,6 +316,8 @@
         background-image: none;
         background-color: #fff;
         max-height: 100vh;
+        min-height:200px;
+        min-width: 300px;
         height: auto;
         .modal__header{
           .modal__close__button{
