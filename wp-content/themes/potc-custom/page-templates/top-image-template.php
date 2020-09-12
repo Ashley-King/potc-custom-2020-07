@@ -26,9 +26,9 @@ if(!$cta){
 
 ?>
 
-<section class="top-image__hero " style="background: linear-gradient(rgba(0,0,0, 0.6)
+<section class="top-image__hero " style="background: linear-gradient(rgba(0,0,0, 0.7)
 
-, rgba(0,0,0,0.6)
+, rgba(0,0,0,0.65)
 
 ), url(<?php echo $bg_image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
     <div class="top-image__hero__text container">

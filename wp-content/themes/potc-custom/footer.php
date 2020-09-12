@@ -17,7 +17,7 @@
 						<p><span class="green-text">all rights reserved &copy; <?php echo date('Y') ?> &nbsp; |&nbsp; </span><a href="/">pediatricOTcourses.com</a> &nbsp;<span class="green-text"> | </span>&nbsp; <span class="green-text white-space">unique continuing education</span> &nbsp;</p> 
 					</div>
 					<div class="footer__info--bottom">
-					<a href="/disclosure">Disclosure</a> &nbsp;<span class="green-text"> | </span>&nbsp; <a href="/privacy-policy">Privacy Policy</a> &nbsp;<span class="green-text"> | </span>&nbsp; <a href="/tbl">TBL Newsletter</a>
+					<a href="/disclosure">Disclosure</a> &nbsp;<span class="green-text"> | </span>&nbsp; <a href="/privacy-policy">Privacy Policy</a> &nbsp;<span class="green-text"> | </span>&nbsp; <a href="/tbl">TBL Newsletter</a> &nbsp;<span class="green-text"> | </span>&nbsp; <a href="/courses">Courses</a>
 					</div>
 				
 				

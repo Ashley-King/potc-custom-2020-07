@@ -8,7 +8,7 @@ if(!$list){
 get_header();
 
 ?>
-<section class="home__hero" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7)), url(<?php echo $image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+<section class="home__hero" style="background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.65)), url(<?php echo $image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
     
     <div class="home__hero__text container">
         <h1>It's time to focus on <span>your</span> potential for <span class="white-space">a change.</span></h1>

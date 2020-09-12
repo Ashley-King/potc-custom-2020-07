@@ -19,7 +19,7 @@
                 font-size: 60px;
                 line-height: 1.1; 
                 text-align: center;
-                color: #fff;
+                color: $light-orange;
                 margin: 0 auto 30px auto;
                 @media(max-width: 767px){
                     font-size: 45px; 
@@ -36,6 +36,7 @@
                
                 .smaller{
                     font-size: 40px;
+                    font-weight: $semi-bold;
                     @media(max-width: 767px){
                         font-size: 35px; 
                     }

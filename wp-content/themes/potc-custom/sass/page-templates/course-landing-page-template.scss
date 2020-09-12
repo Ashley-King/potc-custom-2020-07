@@ -1,0 +1,86 @@
+.page-template-course-landing-page-template{
+    .site-header{
+        display: none;
+    }
+    .course-landing__hero{
+        margin-top: -80px;
+        padding: 250px 0 150px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media(max-width:1024px){
+            padding: 100px 0 100px 0;
+        }
+        @media(max-width:767px){
+            padding: 100px 0 75px 0;
+        }
+        .course-landing__hero__text{
+            h1 {
+                font-weight: $light;
+                font-size: 60px;
+                line-height: 1.1; 
+                text-align: center;
+                color: $light-orange;
+                margin: 0 auto 30px auto;
+                max-width: 80%;
+                @media(max-width: 767px){
+                    font-size: 45px; 
+                }
+                @media(max-width: 512px){
+                    font-size: 40px; 
+                }
+                @media(max-width: 460px){
+                    font-size: 35px; 
+                }
+                @media(max-width: 412px){
+                    font-size: 30px; 
+                }
+               
+                .smaller{
+                    font-size: 40px;
+                    font-weight: $semi-bold;
+                    @media(max-width: 767px){
+                        font-size: 35px; 
+                    }
+                    @media(max-width: 500px){
+                        font-size: 30px; 
+                    }
+                    @media(max-width: 460px){
+                        font-size: 25px; 
+                    }
+                    @media(max-width: 370px){
+                        font-size: 20px; 
+                    }
+                }  
+            }//h1
+            .course-landing__hero__cta  {
+
+            } 
+        }//text container
+
+        
+    }//hero
+    .course-landing__content{
+        padding-top: 60px;
+       .courses-headline{
+           h2{
+           
+                font-weight: $light;
+                color: $dark-green;
+                text-transform: capitalize;
+                text-align: center;
+                font-size: 40px;
+                line-height: 1.2;
+                max-width: 80%;
+                margin: 0 auto;
+          
+           }
+           
+       }//headline
+      
+    }//course-landing__content
+}//template
+    
+    
+

@@ -17,9 +17,10 @@
 
         h1 {
             font-size: 60px;
+            font-weight: 700;
             line-height: 1.1;
             text-align: center;
-            color: #fff;
+            color: $light-orange;
             max-width: 80%;
             margin: 0 auto 30px auto;
 
@@ -44,7 +45,7 @@
         }
 
         p {
-            color: #fff;
+            color: $light-orange;
             font-weight: 500;
             font-size: 20px;
             text-align: center;
