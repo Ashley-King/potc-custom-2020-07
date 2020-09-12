@@ -139,6 +139,27 @@ jQuery(document).ready(function($){
         });
         
     })
+    $('#bottom-course-going-pro-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('bottom-course-going-pro',{
+            disableFocus: true,
+        });
+    })
+    $('#bottom-course-getting-paid-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('bottom-course-getting-paid',{
+            disableFocus: true,
+        });
+        
+    })
+
+    $('#bottom-course-report-revamp-open').click(function(e){
+        e.preventDefault();
+        MicroModal.show('bottom-course-report-revamp',{
+            disableFocus: true,
+        });
+        
+    })
 
     /**
      * ANCHOR TAG SCROLL

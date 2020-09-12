@@ -227,7 +227,9 @@ STYLED ELEMENTS
 .styled-list-asterisk {
     list-style: none;
     margin-left: 30px;
-
+    @media(max-width: 768px){
+      margin-left: 0;
+    }
     li {
         list-style-type: none;
         text-indent: -1em;
