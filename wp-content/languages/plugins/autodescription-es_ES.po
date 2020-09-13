@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - The SEO Framework - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-05 05:31:56+0000\n"
+"PO-Revision-Date: 2020-09-09 11:27:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,44 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - The SEO Framework - Development (trunk)\n"
+
+#: inc/views/templates/settings/settings.php:57
+msgid "This taxonomy inherited the state from the post type, so this option won't have any effect."
+msgstr "Esta taxonomía ha heredado el estado del tipo de entrada, por lo que esta opción no tendrá ningún efecto."
+
+#. translators: %s = HTML tag example
+#: inc/views/admin/metaboxes/title-metabox.php:170
+msgid "This strips HTML tags, like %s, from the title. Disable this option to display generated HTML tags as plain text in meta titles."
+msgstr "Esto quita las etiquetas HTML, como %s, del título. Desactiva esta opción para mostrar las etiquetas HTML generadas como texto sin formato en los títulos meta."
+
+#: inc/views/admin/metaboxes/social-metabox.php:392
+msgid "Use social image?"
+msgstr "¿Usar la imagen social?"
+
+#: inc/views/admin/metaboxes/social-metabox.php:385
+msgid "Only custom social images that are selected via the Media Library are considered."
+msgstr "Solo se consideran las imágenes sociales personalizadas que se seleccionan a través de la biblioteca de medios."
+
+#: inc/views/admin/metaboxes/social-metabox.php:379
+msgid "Check this option if you want to replace page titles with Open Graph titles in embeds."
+msgstr "Marca esta opción si quieres reemplazar los títulos de las páginas con títulos de Open Graph en incrustaciones."
+
+#: inc/views/admin/metaboxes/social-metabox.php:378
+msgid "Use Open Graph title?"
+msgstr "¿Usar título de Open Graph?"
+
+#. translators: 1: Method or Property name, 2: The SEO Framework class. 3:
+#. Message
+#: inc/classes/debug.class.php:264
+msgid "%1$s is not accessible in %2$s. %3$s"
+msgstr "%1$s no es accesible en %2$s. %3$s"
+
+#. translators: %1$s = New, lower version number, surrounded in
+#. markdown-backticks. %2$s = Old, higher version number, surrounded in
+#. markdown-backticks.
+#: bootstrap/upgrade.php:372
+msgid "Your website has been downgraded successfully to use The SEO Framework at database version `%1$s` from `%2$s`."
+msgstr "Tu web se ha desactualizado correctamente para usar The SEO Framework en la versión de la base de datos `%1$s` de `%2$s`."
 
 #: inc/classes/builders/seobar-page.class.php:182
 msgid "It's built from the page title."
@@ -66,9 +104,61 @@ msgstr "Ajustes del título social"
 msgid "Show logo next to sitemap header title?"
 msgstr "¿Mostrar el logotipo al lado del título de la cabecera del mapa del sitio?"
 
+#: inc/views/admin/metaboxes/sitemaps-metabox.php:349
+msgid "Header Title Logo"
+msgstr "Logotipo del título de la cabecera"
+
+#: inc/views/admin/metaboxes/sitemaps-metabox.php:89
+msgid "This sitemap considers the indexing state of all your posts and pages."
+msgstr "Este mapa del sitio tiene en cuenta el estado de indexación de todas tus entradas y páginas."
+
+#: inc/views/admin/metaboxes/sitemaps-metabox.php:87
+msgid "Output optimized sitemap?"
+msgstr "¿Mostramos el mapa del sitio optimizado?"
+
+#. translators: 1: Option label, 2: [?] option info note, 3: Optional warning
+#: inc/views/admin/metaboxes/homepage-metabox.php:443
+#: inc/views/admin/metaboxes/homepage-metabox.php:459
+#: inc/views/admin/metaboxes/homepage-metabox.php:475
+msgctxt "robots setting"
+msgid "%1$s %2$s %3$s"
+msgstr "%1$s %2$s %3$s"
+
+#: inc/views/admin/metaboxes/description-metabox.php:37
+msgid "Learn how this feature works."
+msgstr "Aprende cómo funciona esta característica."
+
+#: inc/views/admin/metaboxes/title-metabox.php:273
+msgid "Remove term type prefixes from generated archive titles?"
+msgstr "¿Eliminar los prefijos de tipo de término de los títulos de archivo generados?"
+
+#: inc/views/admin/metaboxes/title-metabox.php:239
+msgid "Remove site title from the title?"
+msgstr "¿Eliminar el título del sitio del title?"
+
 #: inc/views/admin/metaboxes/title-metabox.php:227
 msgid "Site Title"
 msgstr "Título del sitio"
+
+#: inc/views/admin/metaboxes/title-metabox.php:198
+msgid "Site Title Location"
+msgstr "Ubicación del título del sitio"
+
+#: inc/views/admin/metaboxes/title-metabox.php:193
+msgid "This option does not affect the homepage; it uses a different one."
+msgstr "Esta opción no afecta la página de inicio; utiliza otra diferente."
+
+#: inc/views/admin/metaboxes/title-metabox.php:70
+msgid "Example Archive Title Output"
+msgstr "Ejemplo de salida de título de archivo"
+
+#: inc/views/admin/metaboxes/title-metabox.php:30
+msgid "Example Post"
+msgstr "Ejemplo de entrada"
+
+#: inc/views/admin/metaboxes/general-metabox.php:471
+msgid "When taxonomies have all their bound post types excluded, they will inherit their exclusion status."
+msgstr "Cuando las taxonomías tienen excluidos todos sus tipos de contenido vinculados, heredarán su estado de exclusión."
 
 #: inc/views/admin/metaboxes/general-metabox.php:470
 msgid "Select taxonomies which should be excluded."
@@ -78,17 +168,42 @@ msgstr "Selecciona las taxonomías que se deben excluir."
 msgid "Taxonomy Exclusions"
 msgstr "Exclusiones de taxonomías"
 
+#: inc/views/admin/metaboxes/general-metabox.php:433
+msgid "Select post types which should be excluded."
+msgstr "Selecciona qué tipos de entradas se deben excluir."
+
 #: inc/views/admin/metaboxes/general-metabox.php:431
 msgid "Post Type Exclusions"
 msgstr "Exclusiones de tipos de contenido"
+
+#. translators: backticks are code wraps. Markdown!
+#: inc/views/admin/metaboxes/general-metabox.php:422
+msgid "These options should not need changing when post types and taxonomies are registered correctly. When they aren't, consider applying `noindex` to purge them from search engines, instead."
+msgstr "Estas opciones no deberían necesitar cambiarse cuando los tipos de contenido y las taxonomías se registran correctamente. Cuando no sea así, plantéate aplicar «noindex» para quitarlos de los motores de búsqueda."
+
+#: inc/views/admin/metaboxes/general-metabox.php:418
+msgid "When checked, these options will remove meta optimizations, SEO suggestions, and sitemap inclusions for the selected post types and taxonomies. This will allow search engines to crawl the post type and taxonomies without advanced restrictions or directions."
+msgstr "Cuando están marcadas, estas opciones eliminarán las optimizaciones meta, las sugerencias de SEO y las inclusiones de mapas del sitio para los tipos de entradas y taxonomías seleccionados. Esto permitirá a los motores de búsqueda rastrear el tipo de entrada y las taxonomías sin restricciones ni instrucciones avanzadas."
 
 #: inc/views/admin/metaboxes/general-metabox.php:416
 msgid "Exclusion Settings"
 msgstr "Ajustes de exclusión"
 
+#: inc/views/admin/metaboxes/general-metabox.php:272
+msgid "An object cache handler has been detected."
+msgstr "Se ha detectado un controlador de caché de objetos."
+
 #: inc/views/admin/metaboxes/general-metabox.php:41
 msgid "Exclusions"
 msgstr "Exclusiones"
+
+#: inc/views/templates/settings/settings.php:37
+msgid "This taxonomy's post types are also excluded, so this option won't have any effect."
+msgstr "Los tipos de contenido de esta taxonomía también están excluidos, por lo que esta opción no tendrá ningún efecto."
+
+#: inc/views/templates/settings/settings.php:27
+msgid "This taxonomy is excluded, so this option won't work."
+msgstr "Esta taxonomía está excluida, por lo que esta opción no funcionará."
 
 #. translators: Taxonomy term archive title. 1: Taxonomy singular name, 2:
 #. Current taxonomy term
@@ -97,10 +212,39 @@ msgctxt "tax prefix: title"
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
+#. translators: %s = number
+#: inc/classes/admin-pages.class.php:1229
+msgid "Characters: %s"
+msgstr "Caracteres: %s"
+
+#: inc/classes/builders/seobar-term.class.php:396
+msgid "It's built from the term SEO meta input."
+msgstr "Está creado a partir del término SEO «meta input»."
+
+#: inc/classes/builders/seobar-term.class.php:394
+msgid "Obtained from the term SEO meta input."
+msgstr "Obtenido del término SEO «meta input»."
+
+#: inc/classes/builders/seobar-term.class.php:191
+msgid "It's built from the term name."
+msgstr "Está creado desde el nombre del término."
+
+#: inc/classes/builders/seobar-page.class.php:415
+msgid "It's built from the page SEO meta input."
+msgstr "Está creado a partir de la página SEO «meta input»."
+
+#: inc/classes/builders/seobar-page.class.php:413
+msgid "Obtained from the page SEO meta input."
+msgstr "Obtenido de la página SEO «meta input»."
+
 #: inc/classes/builders/seobar-page.class.php:382
 #: inc/classes/builders/seobar-term.class.php:363
 msgid "Markup syntax was found that isn't transformed. Consider rewriting the custom description."
 msgstr "Se ha encontrado una sintaxis de marcado que no está transformada. Plantéate reescribir la descripción personalizada."
+
+#: inc/classes/builders/seobar-page.class.php:379
+msgid "It's built from the page excerpt field."
+msgstr "Está creado a partir del campo de extracto de la página."
 
 #. translators: 1 = 'Assessment(s)', 2 = A list of assessments.
 #: inc/classes/interpreters/seobar.class.php:347
@@ -126,6 +270,15 @@ msgstr "%1$s: %2$s %3$s"
 msgctxt "blog page description"
 msgid "%1$s %2$s %3$s"
 msgstr "%1$s %2$s %3$s"
+
+#. translators: %s = Link, markdown.
+#: bootstrap/upgrade.php:464
+msgid "To take full advantage of all SEO features, please follow our [5-minute setup guide](%s)."
+msgstr "Para aprovechar al máximo todas las características de SEO, por favor, sigue nuestra [guía de configuración de 5 minutos](%s)."
+
+#: bootstrap/upgrade.php:460
+msgid "The SEO Framework automatically optimizes your website for search engines and social media."
+msgstr "The SEO Framework optimiza automáticamente tu web para motores de búsqueda y redes sociales."
 
 #: inc/views/admin/metaboxes/title-metabox.php:165
 msgid "Some titles may have HTML tags inserted by the author for styling."
@@ -487,6 +640,10 @@ msgstr "Excluir esta página de todas las consultas de búsqueda en este sitio."
 msgid "Default (%s)"
 msgstr "Por defecto (%s)"
 
+#: inc/views/edit/seo-settings-singular.php:304
+msgid "Note: A non-default selection here will overwrite the global homepage SEO settings."
+msgstr "Nota: una selección no por defecto aquí sobrescribirá los ajustes globales de SEO de la página de inicio."
+
 #: inc/views/edit/seo-settings-singular.php:290
 msgid "These directives may urge robots not to display, follow links on, or create a cached copy of this page."
 msgstr "Estas directivas pueden instar a los robots a no mostrar, seguir enlaces o crear una copia de esta página en la caché."
@@ -578,6 +735,10 @@ msgstr "La URL de la imagen social puede ser usada tanto por los motores de bús
 #: inc/views/admin/metaboxes/homepage-metabox.php:108
 msgid "Note: The input value of this field may be used to describe the name of the site elsewhere."
 msgstr "Nota: el valor de la entrada de este campo puede ser usado para describir el nombre del sitio en otra parte."
+
+#: inc/views/admin/metaboxes/sitemaps-metabox.php:303
+msgid "You can style the optimized sitemap to give it a more personal look for your visitors. Search engines do not use these styles."
+msgstr "Puedes diseñar el mapa del sitio optimizado para darle un aspecto más personal a tus visitantes. Los motores de búsqueda no usan estos estilos."
 
 #: inc/views/admin/metaboxes/sitemaps-metabox.php:266
 msgid "This speeds up post and term saving processes, by offsetting pinging to a later time."
@@ -1181,6 +1342,11 @@ msgstr "La marca está duplicada."
 #: inc/classes/builders/seobar-term.class.php:179
 msgid "Incomplete."
 msgstr "Incompleto."
+
+#: inc/classes/builders/seobar-page.class.php:166
+#: inc/classes/builders/seobar-term.class.php:175
+msgid "The site title is found multiple times."
+msgstr "El título del sitio se encuentra varias veces."
 
 #: inc/classes/builders/seobar-page.class.php:164
 #: inc/classes/builders/seobar-term.class.php:173
@@ -1851,6 +2017,14 @@ msgstr "Este es un mapa de sitio XML generado, destinado a ser consumido por mot
 #: inc/views/sitemap/xsl-stylesheet.php:233
 msgid "XML Sitemap"
 msgstr "Mapa del sitio XML"
+
+#: inc/views/admin/metaboxes/sitemaps-metabox.php:340
+msgid "Sitemap Title and Lines Color"
+msgstr "Título del mapa del sitio y color de las líneas"
+
+#: inc/views/admin/metaboxes/sitemaps-metabox.php:331
+msgid "Sitemap Header Background Color"
+msgstr "Color de fondo de la cabecera del mapa del sitio"
 
 #: inc/views/admin/metaboxes/sitemaps-metabox.php:314
 msgid "This makes the sitemap more readable for humans."
@@ -2729,6 +2903,11 @@ msgstr "Categoría: %s"
 #: inc/classes/generate-title.class.php:857
 msgid "Archives"
 msgstr "Archivos"
+
+#: inc/classes/generate-description.class.php:741
+msgctxt "Placement. e.g. Post Title \"on\" Site Title"
+msgid "on"
+msgstr "en"
 
 #: inc/classes/generate-title.class.php:1009
 msgid "Untitled"
