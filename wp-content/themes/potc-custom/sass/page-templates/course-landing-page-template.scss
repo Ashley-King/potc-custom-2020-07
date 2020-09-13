@@ -93,7 +93,9 @@
 
     .course-landing__content__content{
         background: $light-green-bg;
+        
         .course__content{
+            max-width: 960px;
             p{
                 font-size: 20px;
             }
