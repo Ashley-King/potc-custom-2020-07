@@ -98,67 +98,13 @@ $cta_text = $cta;
       <div class="course-description">
         <?php echo $course['course_description'] ?>
       </div><!-- ccourse-description -->
-      <div class="course-learn-more flex-row justify-start align-center">
-        <div class="learn-more__image">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24.801" height="14.273" viewBox="0 0 24.801 14.273">
-  <g id="down-arrow" transform="translate(0 116.571) rotate(-90)">
-    <g id="Group_1" data-name="Group 1" transform="translate(102.298 0)">
-      <path id="Path_1" data-name="Path 1" d="M104.758,12.407,116.272,1.629a.912.912,0,0,0,0-1.349,1.07,1.07,0,0,0-1.442,0L102.6,11.732a.912.912,0,0,0,0,1.349l12.235,11.452a1.069,1.069,0,0,0,1.442-.023.911.911,0,0,0,0-1.326Z" transform="translate(-102.298 0)" fill="#ff8247"/>
-    </g>
-  </g>
-</svg>
-
-        </div><!-- learn-more__image -->
-        
-        <p class="learn-more__text">More Info</p>
-      </div><!-- course-learn-more -->
-        
-      <div class="course-content">
-        <?php echo $course['course_content'] ?>
-      </div><!-- ccourse-content -->
+      
+      
       <div class="course-cta flex-col justify-start align-start">
-        <a href="#" class="course-cta-button"id="<?php echo $course['course_class'] ?>-open"><?php echo $course['course_cta']?></a>
+        <a href="<?php echo $course['course_link'] ?>" class="course-cta-button"><?php echo $course['course_link_text']?></a>
 
       </div><!-- course-cta -->
-<!--MODAL-->
-<div class="modal micromodal-slide course-box-modal" id="<?php echo $course['course_class'] ?>" aria-hidden="true">
-     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-courses-title">
 
-             <header class="modal__header">
-                 <div class="modal__close" aria-label="Close modal" data-micromodal-close>
-                     <div class="modal__close__button" data-micromodal-close aria-label="Close modal">&#x2715;</div>
-                 </div>
-             </header>
-             <div class="modal__content" id="<?php echo $course['course_class'] ?>">
-                 <div class="modal__content__header">
-                     <h2 class="join-message">Join The Waitlist for <?php echo strip_tags($course['course_name'])?>!</h2>
-                     <h2 class="success-message">You're In!</h2>
-                     <p class="success-confirm">Please check your email to confirm your subscription.</p>
-                 </div>
-                 <!-- header -->
-                <div class="modal__content__form">
-                    <form id="<?php echo $course['course_class'] ?>-form">
-                        <input type="text" placeholder="First Name" name="first_name" required />
-                        <input type="email" placeholder="Email" name="email" required />
-                        <!-- no botz please -->
-                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                         name="license" " tabindex=" -1" value="" autocomplete="offload" /></div>
-                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="list"
-                         tabindex="-1" value="<?php echo $course['course_list_id'] ?>" autocomplete="offload" />
-                 </div>
-                 <button type="submit" class="course-form-submit" id="<?php echo $course['course_class'] ?>-submit">Sign Me Up!</button>
-                 </form>
-         </div><!-- form-->
-
-        </div><!-- modal-content-->
-
-     </div>
- </div>
- </div>
-
- <!--MODAL-->
-     
 
 
           </div><!-- course-box -->
