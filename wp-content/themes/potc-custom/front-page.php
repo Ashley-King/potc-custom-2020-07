@@ -8,10 +8,11 @@ if(!$list){
 get_header();
 
 ?>
-<section class="home__hero" style="background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.65)), url(<?php echo $image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+<section class="home__hero" style="background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.65)), url(<?php echo $image['url'] ?>); background-position: center center; background-repeat: no-repeat; background-size: cover;">
     
     <div class="home__hero__text container">
         <h1>It's time to focus on <span>your</span> potential for <span class="white-space">a change.</span></h1>
+        <div class="divider"></div>
         <p>Join our list and be the first to know about new courses and course discounts. Get the best ideas in pediatric therapy, business and life.</p>
         <div class="home__hero__cta "><a href="#" class="pill-button" id="modal-home-open">Join Us!</a></div>
     </div>

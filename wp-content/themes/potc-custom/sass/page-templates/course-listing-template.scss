@@ -7,11 +7,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100vh;
         @media(max-width:1024px){
-            padding: 100px 0 100px 0;
+            height: 75vh;
         }
         @media(max-width:767px){
-            padding: 100px 0 75px 0;
+            // padding: 100px 0 75px 0;
         }
         .course-listing__hero__text{
             h1 {
@@ -19,7 +20,7 @@
                 font-size: 60px;
                 line-height: 1.1; 
                 text-align: center;
-                color: $light-orange;
+                color: #fff;
                 margin: 0 auto 30px auto;
                 @media(max-width: 767px){
                     font-size: 45px; 
@@ -44,7 +45,7 @@
                         font-size: 30px; 
                     }
                     @media(max-width: 460px){
-                        font-size: 25px; 
+                        font-size: 24px; 
                     }
                     @media(max-width: 370px){
                         font-size: 20px; 

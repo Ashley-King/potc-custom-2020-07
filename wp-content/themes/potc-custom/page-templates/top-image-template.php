@@ -26,7 +26,7 @@ if(!$cta){
 
 ?>
 
-<section class="top-image__hero " style="background: linear-gradient(rgba(0,0,0, 0.7)
+<section class="top-image__hero " style="background: linear-gradient(rgba(0,0,0, 0.75)
 
 , rgba(0,0,0,0.65)
 

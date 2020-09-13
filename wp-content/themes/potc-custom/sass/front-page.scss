@@ -20,20 +20,20 @@
             font-weight: 700;
             line-height: 1.1;
             text-align: center;
-            color: $light-orange;
+            color: #fff;
             max-width: 80%;
-            margin: 0 auto 30px auto;
+            margin: 0 auto 0px auto;
 
             span:not(.white-space) {
                 text-transform: uppercase;
             }
-            @media(max-width: 767px){
+            @media(max-width: 991px){
                 font-size: 50px;
                 max-width: 100%;
                 
             }
             @media(max-width: 500px){
-                font-size: 45px;
+                font-size: 40px;
             }
             @media(max-width: 420px){
                 font-size: 40px;
@@ -43,9 +43,14 @@
             }
             
         }
-
+        .divider{
+            width: 130px;
+            height: 3px;
+            background-color: $light-orange;
+            margin: 20px auto;
+        }
         p {
-            color: $light-orange;
+            color: #fff;
             font-weight: 500;
             font-size: 20px;
             text-align: center;
@@ -55,6 +60,9 @@
             @media(max-width: 767px){
                 font-size: 18px;
                 max-width: 100%;
+            }
+            @media(max-width: 500px){
+                font-size: 16px;
             }
             
         }

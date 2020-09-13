@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
     //show/hide mobile nav
     function navStyles(){
         if(!$('.nav__wrapper--main').hasClass('nav--transparent') && $('.nav__wrapper--mobile-button').hasClass('nav-open')){
-            $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-orange.png') ;
+            $('.nav__logo img').attr('src', '/wp-content/themes/potc-custom/images/logo-white.png') ;
             $('.nav__wrapper--main').css('border-bottom', 'none');
         }
         if(!$('.nav__wrapper--main').hasClass('nav--transparent') && !$('.nav__wrapper--mobile-button').hasClass('nav-open')){
