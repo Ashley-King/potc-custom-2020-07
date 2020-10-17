@@ -191,25 +191,8 @@ class Ai1wmue_Main_Controller {
 	 */
 	public function wp_cli() {
 		if ( defined( 'WP_CLI' ) ) {
-			WP_CLI::add_command(
-				'ai1wm',
-				'Ai1wm_Backup_WP_CLI_Command',
-				array(
-					'shortdesc'     => __( 'All-in-One WP Migration Command', AI1WMUE_PLUGIN_NAME ),
-					'before_invoke' => array( $this, 'activate_extension_commands' ),
-				)
-			);
+			WP_CLI::add_command( 'ai1wm', 'Ai1wm_Backup_WP_CLI_Command', array( 'shortdesc' => __( 'All-in-One WP Migration Command', AI1WMUE_PLUGIN_NAME ) ) );
 		}
-	}
-
-	/**
-	 * Activates extension specific commands
-	 *
-	 * @return void
-	 */
-	public function activate_extension_commands() {
-		$_GET['file'] = 1;
-		$this->ai1wm_commands();
 	}
 
 	/**

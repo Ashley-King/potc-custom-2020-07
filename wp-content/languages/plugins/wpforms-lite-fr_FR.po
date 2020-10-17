@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form by WPForms &#8211; Drag &amp; Drop Form Builder for WordPress - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-15 18:38:35+0000\n"
+"PO-Revision-Date: 2020-10-06 19:57:24+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,6 +23,10 @@ msgstr "Champ #%d"
 #: src/Integrations/UsageTracking/UsageTracking.php:92
 msgid "Allow Usage Tracking"
 msgstr "Autoriser le suivi de l’utilisation"
+
+#: src/Integrations/UsageTracking/UsageTracking.php:93
+msgid "By allowing us to track usage data, we can better help you, as we will know which WordPress configurations, themes, and plugins we should test."
+msgstr "En nous permettant de suivre les données d’utilisation, nous pouvons mieux vous aider car nous savons avec quelles configurations, quels thèmes et quelles extensions WordPress nous devons tester."
 
 #: includes/admin/class-tools.php:102 includes/admin/class-tools.php:106
 msgid "Scheduled Actions"

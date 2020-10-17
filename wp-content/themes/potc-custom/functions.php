@@ -129,7 +129,7 @@ function newsletter_post() {
     'public' => true,
     'query_var' => true,
     'rewrite' => array('slug' => 'newsletter'),
-    'has_archive' => true,
+    'has_archive' => false,
     'hierarchical' => false,
     );
     register_post_type('newsletter', $args);

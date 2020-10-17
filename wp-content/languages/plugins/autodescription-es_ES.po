@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - The SEO Framework - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-09 11:27:09+0000\n"
+"PO-Revision-Date: 2020-10-04 11:02:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,6 +19,10 @@ msgstr "Esta taxonomía ha heredado el estado del tipo de entrada, por lo que es
 #: inc/views/admin/metaboxes/title-metabox.php:170
 msgid "This strips HTML tags, like %s, from the title. Disable this option to display generated HTML tags as plain text in meta titles."
 msgstr "Esto quita las etiquetas HTML, como %s, del título. Desactiva esta opción para mostrar las etiquetas HTML generadas como texto sin formato en los títulos meta."
+
+#: inc/views/admin/metaboxes/social-metabox.php:393
+msgid "LinkedIn displays the post's featured image in embeds. Check this option if you want to replace it with the social image."
+msgstr "LinkedIn muestra la imagen destacada de la entrada en incrustaciones. Marca esta opción si deseas reemplazarla con la imagen social."
 
 #: inc/views/admin/metaboxes/social-metabox.php:392
 msgid "Use social image?"
@@ -66,6 +70,10 @@ msgstr "Estos ajustes se aplican a otros tipos de contenido registrados globalme
 #: inc/views/admin/metaboxes/robots-metabox.php:394
 msgid "Global Settings"
 msgstr "Ajustes globales"
+
+#: inc/views/admin/metaboxes/robots-metabox.php:360
+msgid "These settings apply to the taxonomies of post types. When taxonomies have all their bound post types' options checked, they will inherit their status."
+msgstr "Estos ajustes se aplican a las taxonomías de los tipos de contenido. Cuando las taxonomías tienen marcadas todas las opciones de sus tipos de contenido vinculados, heredarán su estado."
 
 #: inc/views/admin/metaboxes/robots-metabox.php:358
 msgid "Taxonomy Settings"
@@ -136,6 +144,10 @@ msgstr "¿Eliminar los prefijos de tipo de término de los títulos de archivo g
 msgid "Remove site title from the title?"
 msgstr "¿Eliminar el título del sitio del title?"
 
+#: inc/views/admin/metaboxes/title-metabox.php:231
+msgid "Always brand your titles. Search engines may ignore your titles with this feature enabled."
+msgstr "Marca siempre tus títulos. Los motores de búsqueda pueden ignorar tus títulos con esta característica activada."
+
 #: inc/views/admin/metaboxes/title-metabox.php:227
 msgid "Site Title"
 msgstr "Título del sitio"
@@ -151,6 +163,10 @@ msgstr "Esta opción no afecta la página de inicio; utiliza otra diferente."
 #: inc/views/admin/metaboxes/title-metabox.php:70
 msgid "Example Archive Title Output"
 msgstr "Ejemplo de salida de título de archivo"
+
+#: inc/views/admin/metaboxes/title-metabox.php:54
+msgid "Example Page Title Output"
+msgstr "Ejemplo de salida de página de título"
 
 #: inc/views/admin/metaboxes/title-metabox.php:30
 msgid "Example Post"
@@ -176,6 +192,10 @@ msgstr "Selecciona qué tipos de entradas se deben excluir."
 msgid "Post Type Exclusions"
 msgstr "Exclusiones de tipos de contenido"
 
+#: inc/views/admin/metaboxes/general-metabox.php:426
+msgid "Default post types and taxonomies can not be excluded."
+msgstr "Los tipos de entradas y taxonomías por defecto no se pueden excluir."
+
 #. translators: backticks are code wraps. Markdown!
 #: inc/views/admin/metaboxes/general-metabox.php:422
 msgid "These options should not need changing when post types and taxonomies are registered correctly. When they aren't, consider applying `noindex` to purge them from search engines, instead."
@@ -196,6 +216,10 @@ msgstr "Se ha detectado un controlador de caché de objetos."
 #: inc/views/admin/metaboxes/general-metabox.php:41
 msgid "Exclusions"
 msgstr "Exclusiones"
+
+#: inc/views/templates/settings/settings.php:47
+msgid "The site title is already removed from meta titles, so this option only affects the homepage."
+msgstr "El título del sitio ya se ha eliminado de los títulos meta, por lo que esta opción solo afecta a la página de inicio."
 
 #: inc/views/templates/settings/settings.php:37
 msgid "This taxonomy's post types are also excluded, so this option won't have any effect."
@@ -245,6 +269,20 @@ msgstr "Se ha encontrado una sintaxis de marcado que no está transformada. Plan
 #: inc/classes/builders/seobar-page.class.php:379
 msgid "It's built from the page excerpt field."
 msgstr "Está creado a partir del campo de extracto de la página."
+
+#: inc/classes/builders/seobar-page.class.php:377
+msgid "A page builder is used that renders content dynamically, so no description can be generated for performance and privacy reasons. Consider providing a custom description."
+msgstr "Se utiliza un maquetador de páginas que muestra el contenido de forma dinámica, por lo que no se puede generar una descripción por motivos de rendimiento y privacidad. Considera proporcionar una descripción personalizada."
+
+#: inc/classes/builders/seobar-page.class.php:167
+#: inc/classes/builders/seobar-term.class.php:176
+msgid "Markup syntax was found that isn't transformed. Consider rewriting the custom title."
+msgstr "Se ha encontrado una sintaxis de marcado que no está transformada. Plantéate reescribir el titulo personalizado."
+
+#: inc/classes/builders/seobar-page.class.php:162
+#: inc/classes/builders/seobar-term.class.php:171
+msgid "It's not branded. Search engines may ignore your title. Consider adding back the site title."
+msgstr "No tiene marca. Los motores de búsqueda pueden ignorar tu título. Considera volver a añadir el título del sitio."
 
 #. translators: 1 = 'Assessment(s)', 2 = A list of assessments.
 #: inc/classes/interpreters/seobar.class.php:347
@@ -587,6 +625,18 @@ msgstr "Algunos motores de búsqueda te permiten controlar las directivas de cop
 msgid "Copyright Directive Settings"
 msgstr "Ajustes de la directiva de copyright"
 
+#: inc/classes/builders/seobar-term.class.php:809
+msgid "Archiving is discouraged for this taxonomy at the SEO Settings screen."
+msgstr "Se desaconseja el archivado para esta taxonomía en la pantalla de los ajustes de SEO."
+
+#: inc/classes/builders/seobar-term.class.php:692
+msgid "Link following is discouraged for this taxonomy at the SEO Settings screen."
+msgstr "Se desaconseja el seguimiento de enlaces para esta taxonomía en la pantalla de los ajustes de SEO."
+
+#: inc/classes/builders/seobar-term.class.php:541
+msgid "Indexing is discouraged for this taxonomy at the SEO Settings screen."
+msgstr "Se desaconseja la indexación para esta taxonomía en la pantalla de los ajustes de SEO."
+
 #: inc/classes/builders/seobar-term.class.php:387
 msgid "No term description is set."
 msgstr "No se ha establecido ninguna descripción del término."
@@ -653,6 +703,10 @@ msgstr "Estas directivas pueden instar a los robots a no mostrar, seguir enlaces
 #: inc/views/list/quick-post.php:27 inc/views/list/bulk-post.php:27
 msgid "Link following"
 msgstr "Seguimiento de enlaces"
+
+#: inc/views/edit/seo-settings-singular.php:167
+msgid "For the homepage, this option must be managed on the SEO Settings page."
+msgstr "Para la página de inicio, esta opción debe gestionarse en la página de los ajustes de SEO."
 
 #: inc/views/admin/metaboxes/title-metabox.php:138
 msgid "If the title consists of multiple parts, then the separator will go in-between them."
@@ -788,6 +842,10 @@ msgstr "Nota: estás usando la estructura de enlace permanente simple; por lo ta
 msgid "View the base sitemap."
 msgstr "Ver el mapa base del sitio."
 
+#: inc/views/admin/metaboxes/sitemaps-metabox.php:68
+msgid "The sitemap does not contribute to ranking; it only speeds up indexing. Therefore, it is perfectly fine not having every indexable page in the sitemap."
+msgstr "El mapa del sitio no contribuye a la clasificación; solo acelera la indexación. Por lo tanto, está perfectamente bien no tener todas las páginas indexables en el mapa del sitio."
+
 #: inc/views/admin/metaboxes/sitemaps-metabox.php:66
 msgid "The sitemap is an XML file that lists indexable pages of your website along with optional metadata. This helps search engines find new and updated content more quickly."
 msgstr "El mapa del sitio es un archivo XML que enumera las páginas indexables de tu web junto con metadatos opcionales. Esto ayuda a los motores de búsqueda a encontrar el contenido nuevo y actualizado más rápidamente."
@@ -836,6 +894,11 @@ msgstr "Archivos de fecha"
 #: inc/views/admin/metaboxes/robots-metabox.php:21
 msgid "Author pages"
 msgstr "Páginas de autor"
+
+#: inc/views/admin/metaboxes/robots-metabox.php:321
+#: inc/views/admin/metaboxes/general-metabox.php:434
+msgid "These settings apply to the post type pages and their terms. When terms are shared between post types, all their post types should be checked for this to have an effect."
+msgstr "Estos ajustes se aplican a las páginas de tipo de contenido y sus términos. Cuando los términos se comparten entre los tipos de contenido, todos sus tipos de contenido deben ser marcados para que tenga efecto."
 
 #. translators: %s = HTTP or HTTPS
 #: inc/views/admin/metaboxes/general-metabox.php:301
@@ -993,6 +1056,10 @@ msgstr "El término SEO «meta input» anula el estado de la indexación."
 #: inc/classes/builders/seobar-term.class.php:540
 msgid "Indexing is discouraged for all bound post types to this term at the SEO Settings screen."
 msgstr "Se desaconseja la indexación para todos los tipos de contenido vinculados a este término en la pantalla de los ajustes de SEO."
+
+#: inc/classes/builders/seobar-term.class.php:378
+msgid "It's built from the term description field."
+msgstr "Está creado desde el campo de descripción del término."
 
 #: inc/classes/builders/seobar-term.class.php:360
 msgid "No description could be generated."
@@ -1252,6 +1319,10 @@ msgstr "Se usa la descripción introducida en la pantalla de «Editar página».
 msgid "The description inputted at the SEO Settings screen is used."
 msgstr "Se usa la descripción introducida en la pantalla de «Ajustes de SEO»."
 
+#: inc/classes/builders/seobar-page.class.php:397
+msgid "It's built from the page content."
+msgstr "Está creado desde el contenido de la página."
+
 #: inc/classes/builders/seobar-page.class.php:393
 #: inc/classes/builders/seobar-term.class.php:374
 msgid "Description, generated"
@@ -1309,6 +1380,10 @@ msgstr "Está creado a partir de «meta input» de la página SEO."
 #: inc/classes/builders/seobar-page.class.php:189
 msgid "Obtained from page SEO meta input."
 msgstr "Obtenido de la página SEO «meta input»."
+
+#: inc/classes/builders/seobar-page.class.php:232
+msgid "It's built using the site title."
+msgstr "Está creado usando el título del sitio."
 
 #: inc/classes/builders/seobar-page.class.php:180
 #: inc/classes/builders/seobar-page.class.php:395
@@ -1477,6 +1552,10 @@ msgstr "Nota: Se ha detectado otro plugin de Twitter Card. Estas etiquetas podr�
 #: inc/views/admin/metaboxes/social-metabox.php:80
 msgid "Note: Another Open Graph plugin has been detected. These meta tags might conflict."
 msgstr "Nota: Se ha detectado otro plugin de Open Graph. Estas etiquetas podrían entrar en conflicto."
+
+#: inc/views/admin/metaboxes/sitemaps-metabox.php:304
+msgid "Note: Changes may not appear to have an effect directly because the stylesheet is cached in the browser for 30 minutes."
+msgstr "Nota: puede parecer que los cambios no tienen efecto directamente porque la hoja de estilos se almacena en la caché en el navegador durante 30 minutos."
 
 #: inc/views/admin/metaboxes/sitemaps-metabox.php:236
 msgid "The priority index suggests to search engines which pages are deemed more important. It has no known impact on the SEO value and it is generally ignored."
@@ -2657,6 +2736,10 @@ msgstr "Facebook, Twitter, Pinterest y muchos otros sitios sociales hacen uso de
 #: inc/views/admin/metaboxes/social-metabox.php:73
 msgid "Output Open Graph meta tags?"
 msgstr "¿Integramos las meta etiquetas Open Graph?"
+
+#: inc/views/admin/metaboxes/social-metabox.php:63
+msgid "Output various meta tags for social site integration, among other third-party services."
+msgstr "Mostrar varias etiquetas meta para la integración de sitios sociales, entre otros servicios de terceros."
 
 #: inc/views/admin/metaboxes/social-metabox.php:187
 msgid "Site Shortlink Settings"

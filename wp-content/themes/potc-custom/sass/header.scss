@@ -35,14 +35,12 @@
                 padding: 0;
                 list-style: none;
                 li{
-                    margin-bottom: 10px;
                     a{
                         color: #fff;
                         text-decoration: none;
                         font-size: 20px;
                         line-height: 26px;
                         font-weight: 600;
-                        
                     }
                 }
                 .current-menu-item{
@@ -103,9 +101,6 @@
 
             img{
                 max-width: 150px;
-                @media(max-width: 991px){
-                    max-width: 120px;
-                }
             }
         }
         .main-menu-container{
@@ -188,7 +183,7 @@
         border-bottom: none;
         .nav__wrapper--mobile-button{
             span{
-                border-color: #fff;
+                border-color: $light-orange;
             }
         }
         .main-menu-container{
@@ -196,7 +191,7 @@
             .main-menu-items{
                 .menu-item{
                     a{
-                        color: #fff;
+                        color: $light-orange;
                         text-decoration: none;
                         &:hover{
                             color: $light-orange;
